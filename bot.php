@@ -145,29 +145,31 @@ if($message['type']=='text'){
 		);				
 	}
 
-	else if($pesan_datang=='/nomorvelda'){
+	else if($pesan_datang=='HP'){
 		$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
 				      	array(
 					'type' => 'template',	
-					'altText' => 'Nomor Velda',
+					'altText' => 'Pilih Handphone.',
 					'template' =>[
 						'type' => 'confirm',
-					'text' => 'Nomor Velda',
-					'actions' => [
-							[
-							'type' => 'message',
-							    'label' => 'TSEL',														
-							'text' => '081287717545' 
-							],
-							[
-							'type' => 'message',
-							    'label' => 'XL',
-							    'text' => '085921483878'
-							]	
-							]
-									]
+					'text' => 'Pilih Handphone Anda',
+					'actions' => 
+					[
+						[
+						'type' => 'message',
+						'label' => 'Android',														
+						'text' => 'Android' 
+						],
+							
+						[
+						'type' => 'message',
+						'label' => 'iPhone',
+						'text' => 'iPhone'
+						]	
+					]
+				]
 				  )
 				)
 			     );
