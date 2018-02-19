@@ -175,6 +175,9 @@ if($message['type']=='text'){
 			     );
 		}
 
+
+
+
 	else if($pesan_datang=='menu'){
 		$balas = array(
 			'replyToken' => $replyToken,														
@@ -187,20 +190,21 @@ if($message['type']=='text'){
 					'type' => 'image_carousel',
 					'text' => 'Pilih Handphone Anda',
 					'columns'=>[
-			          	
+			          	[
 			            "imageUrl"=> "https://example.com/bot/images/item1.jpg",
 			            "action"=> [
 					            "type"=> "postback",
 					            "label"=> "Buy",
 					             "data"=> "action=buy&itemid=111"
 			           				],
-			           				
+
 			            "imageUrl"=> "https://example.com/bot/images/item1.jpg",
 			            "action"=> [
 					            "type"=> "postback",
 					            "label"=> "Buy",
 					             "data"=> "action=buy&itemid=111"
 			           				]
+			           ]
 					]
 			]
 
