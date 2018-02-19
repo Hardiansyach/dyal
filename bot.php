@@ -211,7 +211,7 @@ else if($pesan_datang=='/about'){
 	}
 
 
-else if($pesan_datang=='/about'){
+else if($pesan_datang=='carousel'){
 	$balas = array(
 				'replyToken' => $replyToken,														
 				'messages' => 
