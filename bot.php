@@ -245,8 +245,6 @@ if($message['type']=='text'){
             ]
           ]
       ],
-      "imageAspectRatio"=> "rectangle",
-      "imageSize"=> "cover"
 
 
 
