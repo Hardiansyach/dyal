@@ -211,12 +211,13 @@ else if($pesan_datang=='/about'){
 	}
 
 
-else if($pesan_datang=='carousel'){
+else if($pesan_datang=='/c'){
 	$balas = array(
 				'replyToken' => $replyToken,														
 				'messages' => 
 				array(
-					"type"=> "template",
+					[
+  "type"=> "template",
   "altText"=> "this is a carousel template",
   "template"=> [
       "type"=> "carousel",
@@ -281,15 +282,16 @@ else if($pesan_datang=='carousel'){
       "imageAspectRatio"=> "rectangle",
       "imageSize"=> "cover"
   ]
+]
 				)
 				
 			);
-		
+		}
 
 
 
 
-	}
+//	}
 
 
 		$result =  json_encode($balas);
