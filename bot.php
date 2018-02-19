@@ -100,35 +100,18 @@ if (!is_null($datas['id']))
 
 
 
-	if($message['type']=='text')
-		{
-			if($pesan_datang=='Halo')
-			{
-
-
-				$balas = array(
-									'replyToken' => $replyToken,														
-									'messages' => array(
-										array(
-												'type' => 'text',					
-												'text' => 'Halo ' .$profil->displayName.''
-											)
-									)
-								);
-
-			}
-			else
-					if($pesan_datang=='link fotoku')
-			{
-				$balas = array(
-									'replyToken' => $replyToken,														
-									'messages' => array(
-										array(
-												'type' => 'text',					
-												'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
-											)
-									)
-								);
+if($message['type']=='text'){
+	if($pesan_datang=='link fotoku'){
+		$balas = array(
+				'replyToken' => $replyToken,														
+				'messages' => 
+							array(
+								array(
+									'type' => 'text',					
+									'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
+										)
+								)
+					);
 			}
 
 
@@ -137,34 +120,32 @@ if (!is_null($datas['id']))
 		$jss = json_decode($api_ig);
 		$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
 
-		$text1 = "Profil Instagram ".$data[1]."
-				Username : ".$data[1]."
-				ID : ".$jss->user->id."
-				Followers : ".$jss->user->followed_by->count."
-				Following : ".$jss->user->follows->count."
-				Post : ".$jss->user->media->count."
-				Bio : ".$jss->user->biography."
-				Website : ".$jss->user->external_url."
-				Verified : ".$jss->user->is_verified."";
-				
-				$balas = array(
-					'replyToken' => $replyToken,
-					'messages' => array(
-						array(
-							'type' => 'text',
-							'text' => $text1					
-							),
-						array(
-							'type' => 'image',
-							'originalContentUrl' => $profile_pic_url_hd,
-							'previewImageUrl' => $profile_pic_url_hd, 					
-							)
-						)
-					);				
-				}
+		$text1 = 
+		"Profil Instagram ".$data[1]."
+		Username : ".$data[1]."
+		Followers : ".$jss->user->followed_by->count."
+		Following : ".$jss->user->follows->count."
+		Post : ".$jss->user->media->count."
+		Bio : ".$jss->user->biography."
+		Website : ".$jss->user->external_url."
+		Verified : ".$jss->user->is_verified."";		
+		$balas = array(
+			'replyToken' => $replyToken,
+			'messages' => array(
+			array(
+				'type' => 'text',
+				'text' => $text1					
+				),
+			array(
+				'type' => 'image',
+				'originalContentUrl' => $profile_pic_url_hd,
+				'previewImageUrl' => $profile_pic_url_hd, 					
+				)
+			)
+		);				
+	}
 
-		else if($pesan_datang=='/nomorvelda')
-		{
+	else if($pesan_datang=='/nomorvelda'){
 		$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
@@ -191,29 +172,8 @@ if (!is_null($datas['id']))
 				)
 			     );
 		}
-			else
-			if($pesan_datang=='13626')
-			{
-				$balas = array(
-									'replyToken' => $replyToken,														
-									'messages' => array(
-										array(
-												'type' => 'text',					
-												'text' => 'Testing PUSH pesan ke anda'
-											)
-									)
-								);
-				$push = array(
-									'to' => $userId,									
-									'messages' => array(
-										array(
-												'type' => 'text',					
-												'text' => 'Pesan ini dari velicious'
-											)
-									)
-								);
-			}
-		}
+		
+	}
 		else if(!empty($groupid))
 		{	
 			$balas = array(
