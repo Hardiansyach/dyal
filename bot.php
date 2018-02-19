@@ -174,7 +174,35 @@ if($message['type']=='text'){
 				)
 			     );
 		}
-		
+
+
+	else if($pesan_datang=='menu'){
+		$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => 
+					array(
+				      	array(
+					'type' => 'template',	
+					'altText' => 'Pilihan Menu',
+					'template' =>[
+					'type' => 'image_carousel',
+					'text' => 'Pilih Handphone Anda',
+					'columns'=>[
+			          	
+			            "imageUrl"=> "https://example.com/bot/images/item1.jpg",
+			            "action"=> [
+					            "type"=> "postback",
+					            "label"=> "Buy",
+					             "data"=> "action=buy&itemid=111"
+			           				]
+					]
+			]
+
+
+				  			)
+						)
+			     );
+		}
 	}
 		else if(!empty($groupid))
 		{	
