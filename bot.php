@@ -187,23 +187,18 @@ if($message['type']=='text'){
 					'type' => 'template',	
 					'altText' => 'Pilihan Menu',
 					'template' =>[
-					'type' => 'image_carousel',
+					'type' => 'carousel',
 					'text' => 'Pilih Handphone Anda',
 					'columns'=>[
 			          	[
-			            "imageUrl"=> "https://example.com/bot/images/item1.jpg",
+			            "thumbnailImageUrl"=> "https://example.com/bot/images/item1.jpg",
+			            "title"=> "this is menu",
+			            "text"=> "description",
 			            "action"=> [
 					            "type"=> "postback",
 					            "label"=> "Buy",
-					             "data"=> "action=buy&itemid=111"
-			           				],
-
-			            "imageUrl"=> "https://example.com/bot/images/item1.jpg",
-			            "action"=> [
-					            "type"=> "postback",
-					            "label"=> "Buy",
-					             "data"=> "action=buy&itemid=111"
-			           				]
+					             "text"=> "ga"
+			           			],
 			           ]
 					]
 			]
