@@ -100,48 +100,39 @@ if (!is_null($datas['id']))
 
 
 
-	if($message['type']=='text'){
-		if($pesan_datang=='Halo'){
-				$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
-								array(
-									'type' => 'text',					
-									'text' => 'Halo ' .$profil->displayName.''
-									)
-									)
-									);
-				}
-		
-		else if($pesan_datang=='link fotoku'){
-				$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
+if($message['type']=='text'){
+	if($pesan_datang=='Halo'){
+		$balas = array(
+		'replyToken' => $replyToken,														
+		'messages' => 
+			array(
 				array(
 					'type' => 'text',					
-					'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
+					'text' => 'Halo ' .$profil->displayName.''
 					)
-					)
-				);
-			}
-						
-				),
-				array(
-					'type' => 'image',
-					'originalContentUrl' => $profile_pic_url_hd,
-					'previewImageUrl' => $profile_pic_url_hd, 					
-					)
-					)
-					);				
-				}
-		}
+			)
+		);
+	}
 		
-			
+
+	else if ($pesan_datang == 'Test'){
+		$balas = array(
+		'replyToken' => $replyToken,														
+		'messages' => 
+			array(
+				array(
+					'type' => 'text',					
+					'text' => 'Test diterima , ' .$profil->displayName.''
+					)
+			)
+		);
+	}		
 			
 			
 	$response = $bot->leaveRoom('<groupId>');
 	echo $response->getHTTPStatus() . ' ' . $response->getRawBody();		
-		}
+		
+	}
 		$result =  json_encode($balas);
 		//$result = ob_get_clean();
 		file_put_contents('./balasan.json',$result);
