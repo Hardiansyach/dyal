@@ -206,7 +206,6 @@ else if($pesan_datang=='/about'){
 						)
 					)
 				);
-			}
 
 	}
 
@@ -291,7 +290,7 @@ else if($pesan_datang=='/c'){
 
 
 
-//	}
+	}
 
 
 		$result =  json_encode($balas);
