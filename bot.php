@@ -145,6 +145,8 @@
 			);				
 		}
 
+
+
 		else if($pesan_datang=='hp'){
 			$balas = array(
 				'replyToken' => $replyToken,														
@@ -187,7 +189,6 @@
 						'altText' => 'Pilihan Menu',
 						'template' =>[
 						'type' => 'carousel',
-						'text' => 'Pilih Handphone Anda',
 						'columns'=>[
 				          	
 				          	[
