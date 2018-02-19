@@ -145,7 +145,7 @@ if($message['type']=='text'){
 		);				
 	}
 
-	else if($pesan_datang=='HP'){
+	else if($pesan_datang=='hp'){
 		$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
