@@ -356,8 +356,19 @@ else if($pesan_datang=='menu'){
     );
 
 	}
+else if($pesan_datang=='audio'){
+	$balas = array(
+		'replyToken' => $replyToken,														
+		'messages' => array(
+			array(
+				"type" => "audio",
+				"originalContentUrl" => "https://raw.githubusercontent.com/alroysh/dyal/master/modul1.mp3",
+				"duration" => 60000
+			)
+		)
+	);
 
-
+}
 
 else if($pesan_datang=='.example'){
     $balas = array(
