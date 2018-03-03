@@ -456,7 +456,7 @@ else if($pesan_datang=='.example'){
                                 array(
                                     'type' => 'postback', // 類型 (回傳)
                                     'label' => 'postback 2', // 標籤 1
-                                    'data' => 'action=buy&itemid=123' // 資料
+                                    'data' => 'hp' // 資料
                                 ),
                                 array(
                                     'type' => 'message', // 類型 (訊息)
