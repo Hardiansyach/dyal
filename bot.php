@@ -417,8 +417,8 @@ else if($pesan_datang=='menu'){
                     	        ),
                     	        array(
                     	            'type' => 'message', // 類型 (訊息)
-                    	            'label' => 'Komplain Transaksi', // 標籤 2
-                    	            'text' => 'Komplain Transaksi' // 用戶發送文字
+                    	            'label' => 'Web Report', // 標籤 2
+                    	            'uri' => 'http://bit.ly/2rmAIOR' // 用戶發送文字
                     	        )
                     	    )
                     	),
@@ -428,9 +428,9 @@ else if($pesan_datang=='menu'){
                             'text' => 'Pilihan Menu', // 文字 1
                             'actions' => array(
                                 array(
-                                    'type' => 'message', // 類型 (訊息)
+                                    'type' => 'uri', // 類型 (訊息)
                                     'label' => 'No Center', // 標籤 2
-                                    'text' => 'No Center' // 用戶發送文字
+                                    'uri' => 'https://justpaste.it/1hsw3' // 用戶發送文字
                                 ),
                     	        array(
                     	            'type' => 'uri', // 類型 (訊息)
@@ -438,9 +438,9 @@ else if($pesan_datang=='menu'){
                     	            'uri' => 'https://justpaste.it/1hsof' // 用戶發送文字
                                 ),
                                 array(
-                                    'type' => 'message', // 類型 (訊息)
+                                    'type' => 'uri', // 類型 (訊息)
                                     'label' => 'Komplain Transaksi', // 標籤 2
-                                    'text' => 'Komplain Transaksi' // 用戶發送文字
+                                    'uri' => 'https://t.me/propanareload_cs' // 用戶發送文字
                                 )
                             )
                         ),
