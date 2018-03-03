@@ -209,26 +209,25 @@ else if($pesan_datang=='/about'){
 
 	}
 
-else if($pesan_datang=='Android'){
+else if($pesan_datang=='android'){
 	$balas = array(
 				'replyToken' => $replyToken,														
 				'messages' => 
 				array(
 					 array(
 						   'type' => 'template',	
-						   'altText' => 'Android',
+						   'altText' => 'Creator Bot',
 						   'template' =>[
 						   		'type' => 'buttons',	
 						   		'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
-								'title' => 'Handphone Android',
-								'text' => 'Menu',
+								'title' => 'Bot Creator',
+								'text' => 'Created by alroysh_',
 								'actions' => [
 									[
 							    		'type' => 'uri',
-							    		'label' => 'Download Aplikasi',
-							    		'uri' => 'http://propanareload.com/propanareload.apk'
+							    		'label' => 'Add Line',
+							    		'uri' => 'http://line.me/ti/p/~alroysh'
 									],
-
 									[
 							    		'type' => 'uri',
 							    		'label' => 'Follow Instagram',
