@@ -365,7 +365,7 @@ else if($pesan_datang=='android'){
                                 array(
                                     'type' => 'uri', // 類型 (連結)
                                     'label' => 'Download Aplikasi', // 標籤 3
-                                    'uri' => 'https://itunes.apple.com/us/app/telegram-messenger/id686449807?mt=8' // 連結網址
+                                    'uri' => 'https://apple.co/LFj6YN' // 連結網址
                                 ),
                             )
                         ),
