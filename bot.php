@@ -283,6 +283,28 @@ else if($pesan_datang=='menu'){
                 'template' => array(
                     'type' => 'carousel', // 類型 (旋轉木馬)
                     'columns' => array(
+                    	array(
+                    	    'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                    	    'title' => 'Pengaturan', // 標題 1 <不一定需要>
+                    	    'text' => 'Pilihan Menu', // 文字 1
+                    	    'actions' => array(
+                    	        array(
+                    	            'type' => 'message', // 類型 (訊息)
+                    	            'label' => 'Mulai Modul', // 標籤 2
+                    	            'text' => 'Hp' // 用戶發送文字
+                    	        ),
+                    	        array(
+                    	            'type' => 'message', // 類型 (訊息)
+                    	            'label' => 'Format Transaksi', // 標籤 2
+                    	            'text' => 'Format Transaksi' // 用戶發送文字
+                    	        ),
+                    	        array(
+                    	            'type' => 'message', // 類型 (訊息)
+                    	            'label' => 'Komplain Transaksi', // 標籤 2
+                    	            'text' => 'Komplain Transaksi' // 用戶發送文字
+                    	        )
+                    	    )
+                    	),
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Pengaturan', // 標題 1 <不一定需要>
