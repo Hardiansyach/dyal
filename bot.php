@@ -172,7 +172,7 @@
 	                    'columns' => array(
 	                        array(
 	                            'thumbnailImageUrl' => $profile_pic_url_hd, // 圖片網址 <不一定需要>
-	                            'title' => 'Instagram '.$data[1]., // 標題 1 <不一定需要>
+	                            'title' => 'Instagram '.$data[1], // 標題 1 <不一定需要>
 	                            'text' => 'Description 1', // 文字 1
 	                            'actions' => array(
 	                                array(
