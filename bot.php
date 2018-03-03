@@ -214,11 +214,28 @@ else if($pesan_datang=='/mulai-android-1'){
 	$balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
-        	array(
-					'type' => 'image',
-					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
-					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
-					),
+     //    	array(
+					// 'type' => 'image',
+					// 'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
+					// 'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
+					// ),
+        	 array(
+        		   'type' => 'template',	
+        		   'altText' => 'Download Aplikasi',
+        		   'template' =>[
+        		   		'type' => 'buttons',	
+        		   		'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
+        				'title' => 'Download Aplikasi',
+        				'text' => 'Propana Reload',
+        				'actions' => [
+        					[
+        			    		'type' => 'uri',
+        			    		'label' => 'Aplikasi Propana',
+        			    		'uri' => 'http://bit.ly/2F01wyE'
+        					]
+        				]
+        			]
+        		),
 			array(
 				"type" => "audio",
 				"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
@@ -309,8 +326,8 @@ else if($pesan_datang=='menu'){
                     	    'actions' => array(
                     	        array(
                     	            'type' => 'message', // 類型 (訊息)
-                    	            'label' => 'Mulai Modul', // 標籤 2
-                    	            'text' => 'Hp' // 用戶發送文字
+                    	            'label' => 'Modul', // 標籤 2
+                    	            'text' => 'HP' // 用戶發送文字
                     	        ),
                     	        array(
                     	            'type' => 'uri', // 類型 (訊息)
