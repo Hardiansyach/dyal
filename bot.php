@@ -224,7 +224,7 @@ else if($pesan_datang=='/mulai-android-1'){
         		   'altText' => 'Download Aplikasi',
         		   'template' =>[
         		   		'type' => 'buttons',	
-        		   		'thumbnailImageUrl' => 'http://www.propanareload.com/images/logo2.png',
+        		   		'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
         				'title' => 'Download Aplikasi',
         				'text' => 'Propana Reload',
         				'actions' => [
