@@ -339,7 +339,7 @@ else if($pesan_datang=='android'){
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Aplikasi', // 標題 1 <不一定需要>
-                            //'text' => 'Pilihan Menu', // 文字 1
+                            'text' => 'Download Aplikasi Propana Reload', // 文字 1
                             'actions' => array(
                                 array(
                                     'type' => 'uri', // 類型 (連結)
@@ -351,7 +351,7 @@ else if($pesan_datang=='android'){
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Modul', // 標題 2 <不一定需要>
-                            //'text' => 'Pilihan Menu', // 文字 2
+                            'text' => 'Belajar Memulai Aplikasi Android', // 文字 2
                             'actions' => array(
                                 array(
                                     'type' => 'message', // 類型 (連結)
