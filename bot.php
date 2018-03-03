@@ -362,7 +362,7 @@ else if($pesan_datang=='audio'){
 		'messages' => array(
 			array(
 				"type" => "audio",
-				"originalContentUrl" => "https://raw.githubusercontent.com/alroysh/dyal/master/audio/modul1.mp3",
+				"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
 				"duration" => 14000
 			)
 		)
