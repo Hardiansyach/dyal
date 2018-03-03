@@ -216,22 +216,22 @@ else if($pesan_datang=='android'){
 				array(
 					 array(
 						   'type' => 'template',	
-						   'altText' => 'Creator Bot',
+						   'altText' => 'Android Device',
 						   'template' =>[
 						   		'type' => 'buttons',	
 						   		'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
-								'title' => 'Bot Creator',
-								'text' => 'Created by alroysh_',
+								'title' => 'Handphone Android',
+								'text' => 'Menu',
 								'actions' => [
 									[
 							    		'type' => 'uri',
-							    		'label' => 'Add Line',
-							    		'uri' => 'http://line.me/ti/p/~alroysh'
+							    		'label' => 'Download Aplikasi',
+							    		'uri' => 'http://propanareload.com/propanareload.ap'
 									],
 									[
 							    		'type' => 'uri',
 							    		'label' => 'Follow Instagram',
-							    		'uri' => 'https://www.instagram.com/alroysh_/'
+							    		'uri' => 'https://www.instagram.com/dyalbali.store'
 									]	
 								]
 							]
