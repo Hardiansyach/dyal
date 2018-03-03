@@ -243,12 +243,12 @@ else if($pesan_datang=='/mulai-android-1'){
 			),
 			array(
         		   'type' => 'template',	
-        		   'altText' => 'Download Aplikasi',
+        		   'altText' => 'Lanjutkan Modul',
         		   'template' =>[
         		   		'type' => 'buttons',	
-        		   		'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
-        				'title' => 'Download Aplikasi',
-        				'text' => 'Propana Reload',
+        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+        				'title' => 'Lanjutkan Modul',
+        				'text' => 'Pilih Lanjutkan',
         				'actions' => [
         					[
         			    		'type' => 'message',
@@ -258,6 +258,8 @@ else if($pesan_datang=='/mulai-android-1'){
         				]
         			]
         		),
+
+			
            )
     );
 }
