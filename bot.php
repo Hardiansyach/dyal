@@ -259,7 +259,7 @@ else if($pesan_datang=='/mulai-android-1'){
         			]
         		),
 
-			
+
            )
     );
 }
@@ -276,6 +276,49 @@ else if($pesan_datang=='/mulai-android-2'){
 			array(
 				"type" => "audio",
 				"originalContentUrl" => "https://instaud.io/_/1R2q.mp3",
+				"duration" => 14000
+			),
+			array(
+        		   'type' => 'template',	
+        		   'altText' => 'Lanjutkan Modul',
+        		   'template' =>[
+        		   		'type' => 'buttons',	
+        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+        				'title' => 'Lanjutkan Modul',
+        				'text' => 'Pilih Lanjutkan',
+        				'actions' => [
+        					[
+        			    		'type' => 'message',
+        			    		'label' => 'Lanjutkan',
+        			    		'text' => '/mulai-android-3'
+        					]
+        				]
+        			]
+        		),
+
+           )
+    );
+
+}
+
+
+else if($pesan_datang=='/mulai-android-3'){
+	$balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+        	array(
+					'type' => 'image',
+					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
+					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
+					),
+			array(
+				"type" => "audio",
+				"originalContentUrl" => "https://instaud.io/_/1R2r.mp3",
+				"duration" => 14000
+			),
+			array(
+				"type" => "audio",
+				"originalContentUrl" => "https://instaud.io/_/1R2s.mp3",
 				"duration" => 14000
 			)
            )
