@@ -285,45 +285,45 @@ else if($pesan_datang=='menu'){
                     'columns' => array(
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-                            'title' => 'Example Menu 1', // 標題 1 <不一定需要>
-                            'text' => 'Description 1', // 文字 1
+                            'title' => 'Pengaturan', // 標題 1 <不一定需要>
+                            'text' => 'Pilihan Menu', // 文字 1
                             'actions' => array(
                                 array(
-                                    'type' => 'postback', // 類型 (回傳)
-                                    'label' => 'postback 1', // 標籤 1
-                                    'data' => 'action=buy&itemid=123' // 資料
+                                    'type' => 'message', // 類型 (訊息)
+                                    'label' => 'No Center', // 標籤 2
+                                    'text' => 'No Center' // 用戶發送文字
                                 ),
                                 array(
                                     'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Message example 1', // 標籤 2
-                                    'text' => 'Message example 1' // 用戶發送文字
+                                    'label' => 'Format Transaksi', // 標籤 2
+                                    'text' => 'Format Transaksi' // 用戶發送文字
                                 ),
                                 array(
-                                    'type' => 'uri', // 類型 (連結)
-                                    'label' => 'Uri example 1', // 標籤 3
-                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+                                    'type' => 'message', // 類型 (訊息)
+                                    'label' => 'Komplain Transaksi', // 標籤 2
+                                    'text' => 'Komplain Transaksi' // 用戶發送文字
                                 )
                             )
                         ),
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-                            'title' => 'Example Menu 2', // 標題 2 <不一定需要>
-                            'text' => 'Description 2', // 文字 2
+                            'title' => 'Contact Admin', // 標題 2 <不一定需要>
+                            'text' => 'Pilihan Menu', // 文字 2
                             'actions' => array(
                                 array(
-                                    'type' => 'postback', // 類型 (回傳)
-                                    'label' => 'postback 2', // 標籤 1
-                                    'data' => 'action=buy&itemid=123' // 資料
+                                    'type' => 'message', // 類型 (訊息)
+                                    'label' => 'Admin 1', // 標籤 2
+                                    'text' => 'Admin 1' // 用戶發送文字
                                 ),
                                 array(
                                     'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Message example 2', // 標籤 2
-                                    'text' => 'Message example 2' // 用戶發送文字
+                                    'label' => 'Admin 2', // 標籤 2
+                                    'text' => 'Admin 2' // 用戶發送文字
                                 ),
                                 array(
-                                    'type' => 'uri', // 類型 (連結)
-                                    'label' => 'Uri example 2', // 標籤 3
-                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+                                    'type' => 'message', // 類型 (訊息)
+                                    'label' => 'Line Official', // 標籤 2
+                                    'text' => 'Line Official' // 用戶發送文字
                                 )
                             )
                         )
