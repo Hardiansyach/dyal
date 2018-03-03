@@ -209,6 +209,20 @@ else if($pesan_datang=='/about'){
 
 	}
 
+
+else if($pesan_datang=='/mulai-android-1'){
+	$balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+        	array(
+					'type' => 'image',
+					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
+					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
+					)
+           )
+    );
+}
+
 else if($pesan_datang=='android'){
     $balas = array(
         'replyToken' => $replyToken,
@@ -247,9 +261,9 @@ else if($pesan_datang=='android'){
                             'text' => 'Pilihan Menu', // 文字 2
                             'actions' => array(
                                 array(
-                                    'type' => 'uri', // 類型 (連結)
-                                    'label' => 'Download Aplikasi', // 標籤 3
-                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
+                                    'type' => 'message', // 類型 (連結)
+                                    'label' => 'Mulai Belajar', // 標籤 3
+                                    'text' => '/mulai-android-1' // 連結網址
                                 ),
                                 array(
                                     'type' => 'uri', // 類型 (連結)
@@ -356,34 +370,28 @@ else if($pesan_datang=='menu'){
     );
 
 	}
-else if($pesan_datang=='audio'){
-	$balas = array(
-		'replyToken' => $replyToken,														
-		'messages' => array(
-			array(
-				"type" => "audio",
-				"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
-				"duration" => 14000
-			)
-		)
-	);
 
-}
 
-else if($pesan_datang=='image'){
-	$balas = array(
-		'replyToken' => $replyToken,														
-		'messages' => array(
-			array(
-								'type' => 'image',
-								'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo1.jpg",
-								'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo1.jpg" 					
-								)
-		)
-	);
+// else if($pesan_datang=='audio'){
+// 	$balas = array(
+// 		'replyToken' => $replyToken,														
+// 		'messages' => array(
+// 			array(
+// 				"type" => "audio",
+// 				"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
+// 				"duration" => 14000
+// 			)
+// 		)
+// 	);
 
-}
+// }
 
+
+// Modul 1 : https://instaud.io/_/1R2o.mp3
+// Modul 2 : https://instaud.io/_/1R2q.mp3
+// Modul 3 : https://instaud.io/_/1R2r.mp3
+// Modul 4 : https://instaud.io/_/1R2s.mp3
+// Photo : https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg
 
 
 else if($pesan_datang=='.example'){
