@@ -123,37 +123,37 @@
 				}
 
 
-		else if($pesan_datang==$datac){
-			$api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
-			$jss = json_decode($api_ig);
-			$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
+		// else if($pesan_datang==$datac){
+		// 	$api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
+		// 	$jss = json_decode($api_ig);
+		// 	$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
 
-			$text1 = 
-			"Profil Instagram ".$data[1]."
-			Username : ".$data[1]."
-			Followers : ".$jss->user->followed_by->count."
-			Following : ".$jss->user->follows->count."
-			Post : ".$jss->user->media->count."
-			Bio : ".$jss->user->biography."
-			Website : ".$jss->user->external_url."
-			Verified : ".$jss->user->is_verified."";
+		// 	$text1 = 
+		// 	"Profil Instagram ".$data[1]."
+		// 	Username : ".$data[1]."
+		// 	Followers : ".$jss->user->followed_by->count."
+		// 	Following : ".$jss->user->follows->count."
+		// 	Post : ".$jss->user->media->count."
+		// 	Bio : ".$jss->user->biography."
+		// 	Website : ".$jss->user->external_url."
+		// 	Verified : ".$jss->user->is_verified."";
 
 
-			$balas = array(
-				'replyToken' => $replyToken,
-				'messages' => array(
-				array(
-					'type' => 'text',
-					'text' => $text1					
-					),
-				array(
-					'type' => 'image',
-					'originalContentUrl' => $profile_pic_url_hd,
-					'previewImageUrl' => $profile_pic_url_hd, 					
-					)
-				)
-			);				
-		}
+		// 	$balas = array(
+		// 		'replyToken' => $replyToken,
+		// 		'messages' => array(
+		// 		array(
+		// 			'type' => 'text',
+		// 			'text' => $text1					
+		// 			),
+		// 		array(
+		// 			'type' => 'image',
+		// 			'originalContentUrl' => $profile_pic_url_hd,
+		// 			'previewImageUrl' => $profile_pic_url_hd, 					
+		// 			)
+		// 		)
+		// 	);				
+		// }
 
 		else if($pesan_datang==$datac){
 				    $balas = array(
