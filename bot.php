@@ -412,8 +412,8 @@ else if($pesan_datang=='menu'){
                     	        ),
                     	        array(
                     	            'type' => 'uri', // 類型 (訊息)
-                    	            'label' => 'Format Transaksi', // 標籤 2
-                    	            'uri' => 'https://justpaste.it/1hsof' // 用戶發送文字
+                    	            'label' => 'Info Promo', // 標籤 2
+                    	            'uri' => 'https://t.me/propana_info' // 用戶發送文字
                     	        ),
                     	        array(
                     	            'type' => 'message', // 類型 (訊息)
