@@ -229,7 +229,7 @@ else if($pesan_datang=='android'){
                                     'type' => 'uri', // 類型 (連結)
                                     'label' => 'Download Aplikasi', // 標籤 3
                                     'uri' => 'http://propanareload.com/propanareload.apk' // 連結網址
-                                )
+                                ),
                                 array(
                                     'type' => 'message', // 類型 (訊息)
                                     'label' => 'Message example 1', // 標籤 2
