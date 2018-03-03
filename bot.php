@@ -160,6 +160,11 @@
 			$jss = json_decode($api_ig);
 			$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
 
+			$text1 = "
+			Bio : ".$jss->user->biography."
+			Followers : ".$jss->user->followed_by->count."
+			Following : ".$jss->user->follows->count."
+			"
 
 			$balas = array(
 	        'replyToken' => $replyToken,
@@ -173,7 +178,7 @@
 	                        array(
 	                            'thumbnailImageUrl' => $profile_pic_url_hd, // 圖片網址 <不一定需要>
 	                            'title' => 'Instagram '.$data[1], // 標題 1 <不一定需要>
-	                            'text' => 'Description 1', // 文字 1
+	                            'text' => $text1, // 文字 1
 	                            'actions' => array(
 	                                array(
 	                                    'type' => 'postback', // 類型 (回傳)
