@@ -393,7 +393,7 @@ else if($pesan_datang=='menu'){
                     'type' => 'carousel', // 類型 (旋轉木馬)
                     'columns' => array(
                     	array(
-                    	    'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
                     	    'title' => 'Pengaturan', // 標題 1 <不一定需要>
                     	    'text' => 'Pilihan Menu', // 文字 1
                     	    'actions' => array(
@@ -415,7 +415,7 @@ else if($pesan_datang=='menu'){
                     	    )
                     	),
                         array(
-                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Pengaturan', // 標題 1 <不一定需要>
                             'text' => 'Pilihan Menu', // 文字 1
                             'actions' => array(
@@ -437,7 +437,7 @@ else if($pesan_datang=='menu'){
                             )
                         ),
                         array(
-                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Contact Admin', // 標題 2 <不一定需要>
                             'text' => 'Pilihan Menu', // 文字 2
                             'actions' => array(
