@@ -215,14 +215,14 @@ else if($pesan_datang=='android'){
         'messages' => array(
             array(
                 'type' => 'template', // 訊息類型 (模板)
-                'altText' => 'Example buttons template', // 替代文字
+                'altText' => 'Handphone Android', // 替代文字
                 'template' => array(
                     'type' => 'carousel', // 類型 (旋轉木馬)
                     'columns' => array(
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-                            'title' => 'Example Menu 1', // 標題 1 <不一定需要>
-                            'text' => 'Description 1', // 文字 1
+                            'title' => 'Aplikasi', // 標題 1 <不一定需要>
+                            'text' => 'Menu', // 文字 1
                             'actions' => array(
                                 array(
                                     'type' => 'postback', // 類型 (回傳)
@@ -236,8 +236,8 @@ else if($pesan_datang=='android'){
                                 ),
                                 array(
                                     'type' => 'uri', // 類型 (連結)
-                                    'label' => 'Uri example 1', // 標籤 3
-                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+                                    'label' => 'Download A', // 標籤 3
+                                    'uri' => 'http://propanareload.com/propanareload.apk' // 連結網址
                                 )
                             )
                         ),
@@ -273,13 +273,13 @@ else if($pesan_datang=='android'){
 
 
 
-else if($pesan_datang=='.example'){
+else if($pesan_datang=='menu'){
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
             array(
                 'type' => 'template', // 訊息類型 (模板)
-                'altText' => 'Example buttons template', // 替代文字
+                'altText' => 'Pilihan Menu', // 替代文字
                 'template' => array(
                     'type' => 'carousel', // 類型 (旋轉木馬)
                     'columns' => array(
