@@ -347,7 +347,7 @@ else if($pesan_datang=='android'){
 	}
 
 
-	else if($pesan_datang=='iPhone'){
+	else if($pesan_datang=='iphone'){
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -365,7 +365,7 @@ else if($pesan_datang=='android'){
                                 array(
                                     'type' => 'uri', // 類型 (連結)
                                     'label' => 'Download Aplikasi', // 標籤 3
-                                    'uri' => 'https://apple.co/LFj6YN' // 連結網址
+                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
                                 ),
                             )
                         ),
