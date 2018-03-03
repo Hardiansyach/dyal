@@ -294,9 +294,9 @@ else if($pesan_datang=='menu'){
                     	            'text' => 'Hp' // 用戶發送文字
                     	        ),
                     	        array(
-                    	            'type' => 'message', // 類型 (訊息)
+                    	            'type' => 'uri', // 類型 (訊息)
                     	            'label' => 'Format Transaksi', // 標籤 2
-                    	            'text' => 'Format Transaksi' // 用戶發送文字
+                    	            'uri' => 'https://justpaste.it/1hsof' // 用戶發送文字
                     	        ),
                     	        array(
                     	            'type' => 'message', // 類型 (訊息)
@@ -315,10 +315,10 @@ else if($pesan_datang=='menu'){
                                     'label' => 'No Center', // 標籤 2
                                     'text' => 'No Center' // 用戶發送文字
                                 ),
-                                array(
-                                    'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Format Transaksi', // 標籤 2
-                                    'text' => 'Format Transaksi' // 用戶發送文字
+                    	        array(
+                    	            'type' => 'uri', // 類型 (訊息)
+                    	            'label' => 'Format Transaksi', // 標籤 2
+                    	            'uri' => 'https://justpaste.it/1hsof' // 用戶發送文字
                                 ),
                                 array(
                                     'type' => 'message', // 類型 (訊息)
