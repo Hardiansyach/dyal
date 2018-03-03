@@ -240,9 +240,45 @@ else if($pesan_datang=='/mulai-android-1'){
 				"type" => "audio",
 				"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
 				"duration" => 14000
+			),
+			array(
+        		   'type' => 'template',	
+        		   'altText' => 'Download Aplikasi',
+        		   'template' =>[
+        		   		'type' => 'buttons',	
+        		   		'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+        				'title' => 'Download Aplikasi',
+        				'text' => 'Propana Reload',
+        				'actions' => [
+        					[
+        			    		'type' => 'message',
+        			    		'label' => 'Lanjutkan',
+        			    		'text' => '/mulai-android-2'
+        					]
+        				]
+        			]
+        		),
+           )
+    );
+}
+
+else if($pesan_datang=='/mulai-android-2'){
+	$balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+        	array(
+					'type' => 'image',
+					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
+					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
+					),
+			array(
+				"type" => "audio",
+				"originalContentUrl" => "https://instaud.io/_/1R2q.mp3",
+				"duration" => 14000
 			)
            )
     );
+
 }
 
 else if($pesan_datang=='android'){
@@ -414,7 +450,6 @@ else if($pesan_datang=='menu'){
 // Modul 3 : https://instaud.io/_/1R2r.mp3
 // Modul 4 : https://instaud.io/_/1R2s.mp3
 // Photo : https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg
-
 
 else if($pesan_datang=='.example'){
     $balas = array(
