@@ -362,8 +362,8 @@ else if($pesan_datang=='audio'){
 		'messages' => array(
 			array(
 				"type" => "audio",
-				"originalContentUrl" => "https://raw.githubusercontent.com/alroysh/dyal/master/modul1.mp3",
-				"duration" => 60000
+				"originalContentUrl" => "https://raw.githubusercontent.com/alroysh/dyal/master/audio/modul1.mp3",
+				"duration" => 700000
 			)
 		)
 	);
