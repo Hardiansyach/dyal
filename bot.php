@@ -365,7 +365,7 @@ else if($pesan_datang=='android'){
                                 array(
                                     'type' => 'uri', // 類型 (連結)
                                     'label' => 'Download Aplikasi', // 標籤 3
-                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
+                                    'uri' => 'https://goo.gl/UnXm8U' // 連結網址
                                 ),
                             )
                         ),
