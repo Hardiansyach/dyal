@@ -225,41 +225,41 @@ else if($pesan_datang=='android'){
                             'text' => 'Pilihan Menu', // 文字 1
                             'actions' => array(
                                 array(
-                                    'type' => 'postback', // 類型 (回傳)
-                                    'label' => 'postback 1', // 標籤 1
-                                    'data' => 'action=buy&itemid=123' // 資料
-                                ),
-                                array(
-                                    'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Message example 1', // 標籤 2
-                                    'text' => 'Message example 1' // 用戶發送文字
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Download Aplikasi', // 標籤 3
+                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
                                 ),
                                 array(
                                     'type' => 'uri', // 類型 (連結)
-                                    'label' => 'Donload Aplikasi', // 標籤 3
+                                    'label' => 'Download Aplikasi', // 標籤 3
+                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
+                                ),
+                                array(
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Download Aplikasi', // 標籤 3
                                     'uri' => 'http://bit.ly/2F01wyE' // 連結網址
                                 )
                             )
                         ),
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-                            'title' => 'Example Menu 2', // 標題 2 <不一定需要>
-                            'text' => 'Description 2', // 文字 2
+                            'title' => 'Modul', // 標題 2 <不一定需要>
+                            'text' => 'Pilihan Menu', // 文字 2
                             'actions' => array(
                                 array(
-                                    'type' => 'postback', // 類型 (回傳)
-                                    'label' => 'postback 2', // 標籤 1
-                                    'data' => 'action=buy&itemid=123' // 資料
-                                ),
-                                array(
-                                    'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Message example 2', // 標籤 2
-                                    'text' => 'Message example 2' // 用戶發送文字
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Download Aplikasi', // 標籤 3
+                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
                                 ),
                                 array(
                                     'type' => 'uri', // 類型 (連結)
-                                    'label' => 'Uri example 2', // 標籤 3
-                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+                                    'label' => 'Download Aplikasi', // 標籤 3
+                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
+                                ),
+                                array(
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Download Aplikasi', // 標籤 3
+                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
                                 )
                             )
                         )
