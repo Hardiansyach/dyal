@@ -153,6 +153,44 @@ if($message['type']=='text'){
 		);				
 	}
 
+	else if($pesan_datang==$datac){
+		$api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
+		$jss = json_decode($api_ig);
+		$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
+
+		$balas = array(
+		    'replyToken' => $replyToken,
+		    'messages' => array(
+		        array(
+		            'type' => 'template', // 訊息類型 (模板)
+		            'altText' => 'Profil Instagram', // 替代文字
+		            'template' => array(
+		                'type' => 'carousel', // 類型 (旋轉木馬)
+		                'columns' => array(
+		                    array(
+		                        'thumbnailImageUrl' => $profile_pic_url_hd, // 圖片網址 <不一定需要>
+		                        'title' => $data[1], // 標題 1 <不一定需要>
+		                        'text' => 'Description 1', // 文字 1
+		                        'actions' => array(
+		                            array(
+		                                'type' => 'message', // 類型 (訊息)
+		                                'label' => 'Message example 1', // 標籤 2
+		                                'text' => 'Message example 1' // 用戶發送文字
+		                            ),
+		                            array(
+		                                'type' => 'uri', // 類型 (連結)
+		                                'label' => 'Uri example 1', // 標籤 3
+		                                'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+		                            )
+		                        )
+		                    ),
+		                )
+		            )
+		        )
+		    )
+		);
+	}
+
 	else if($pesan_datang=='modul'){
 		$balas = array(
 			'replyToken' => $replyToken,														
