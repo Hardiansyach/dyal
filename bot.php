@@ -359,7 +359,7 @@ else if($pesan_datang=='android'){
                                     'text' => '/mulai-android-1' // 連結網址
                                 ),
                             )
-                        )
+                        ),
                         array(
                            // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Penipuan', // 標題 2 <不一定需要>
