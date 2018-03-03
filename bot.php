@@ -218,7 +218,12 @@ else if($pesan_datang=='/mulai-android-1'){
 					'type' => 'image',
 					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
 					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
-					)
+					),
+			array(
+				"type" => "audio",
+				"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
+				"duration" => 14000
+			)
            )
     );
 }
