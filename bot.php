@@ -222,7 +222,7 @@ else if($pesan_datang=='android'){
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Aplikasi', // 標題 1 <不一定需要>
-                            'text' => 'Menu', // 文字 1
+                            'text' => 'Description 1', // 文字 1
                             'actions' => array(
                                 array(
                                     'type' => 'postback', // 類型 (回傳)
@@ -236,8 +236,8 @@ else if($pesan_datang=='android'){
                                 ),
                                 array(
                                     'type' => 'uri', // 類型 (連結)
-                                    'label' => 'Download A', // 標籤 3
-                                    'uri' => 'http://propanareload.com/propanareload.apk' // 連結網址
+                                    'label' => 'Uri example 1', // 標籤 3
+                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
                                 )
                             )
                         ),
