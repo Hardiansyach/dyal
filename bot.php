@@ -357,9 +357,9 @@ else if($pesan_datang=='android'){
                                     'type' => 'message', // 類型 (連結)
                                     'label' => 'Mulai Belajar', // 標籤 3
                                     'text' => '/mulai-android-1' // 連結網址
-                                )
-
-
+                                ),
+                            )
+                        )
                     )
                 )
             )
