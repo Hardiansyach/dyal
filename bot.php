@@ -176,40 +176,6 @@ if($message['type']=='text'){
 		}
 
 
-
-else if($pesan_datang=='/about'){
-	$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => 
-				array(
-					 array(
-						   'type' => 'template',	
-						   'altText' => 'Creator Bot',
-						   'template' =>[
-						   		'type' => 'buttons',	
-						   		'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
-								'title' => 'Bot Creator',
-								'text' => 'Created by alroysh_',
-								'actions' => [
-									[
-							    		'type' => 'uri',
-							    		'label' => 'Add Line',
-							    		'uri' => 'http://line.me/ti/p/~alroysh'
-									],
-									[
-							    		'type' => 'uri',
-							    		'label' => 'Follow Instagram',
-							    		'uri' => 'https://www.instagram.com/alroysh_/'
-									]	
-								]
-							]
-						)
-					)
-				);
-
-	}
-
-
 else if($pesan_datang=='/mulai-android-1'){
 	$balas = array(
         'replyToken' => $replyToken,
@@ -357,6 +323,61 @@ else if($pesan_datang=='android'){
                                     'type' => 'message', // 類型 (連結)
                                     'label' => 'Mulai Belajar', // 標籤 3
                                     'text' => '/mulai-android-1' // 連結網址
+                                ),
+                            )
+                        ),
+                        array(
+                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                            'title' => 'Penipuan', // 標題 2 <不一定需要>
+                            'text' => 'Hati Hati Dengan Penipuan! Baca Selengkapnya,', // 文字 2
+                            'actions' => array(
+                                array(
+                                    'type' => 'message', // 類型 (連結)
+                                    'label' => 'Penipuan', // 標籤 3
+                                    'text' => '/penipuan-online' // 連結網址
+                                ),
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    );
+
+	}
+
+
+	else if($pesan_datang=='iPhone'){
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+                'type' => 'template', // 訊息類型 (模板)
+                'altText' => 'Handphone iPhone', // 替代文字
+                'template' => array(
+                    'type' => 'carousel', // 類型 (旋轉木馬)
+                    'columns' => array(
+                        array(
+                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                            'title' => 'Aplikasi', // 標題 1 <不一定需要>
+                            'text' => 'Download Aplikasi Telegram', // 文字 1
+                            'actions' => array(
+                                array(
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Download Aplikasi', // 標籤 3
+                                    'uri' => 'https://itunes.apple.com/us/app/telegram-messenger/id686449807?mt=8' // 連結網址
+                                ),
+                            )
+                        ),
+                        array(
+                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                            'title' => 'Modul', // 標題 2 <不一定需要>
+                            'text' => 'Belajar Memulai Aplikasi di iPhone', // 文字 2
+                            'actions' => array(
+                                array(
+                                    'type' => 'message', // 類型 (連結)
+                                    'label' => 'Mulai Belajar', // 標籤 3
+                                    'text' => '/mulai-iphone-1' // 連結網址
                                 ),
                             )
                         ),
