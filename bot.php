@@ -6,6 +6,14 @@
 		date_default_timezone_set('Asia/Jayapura');
 		$wit= date('H.i.s');
 
+// Modul 1 : https://instaud.io/_/1R2o.mp3
+// Modul 2 : https://instaud.io/_/1R2q.mp3
+// Modul 3 : https://instaud.io/_/1R2r.mp3
+// Modul 4 : https://instaud.io/_/1R2s.mp3
+// Modul iPhone 1 : https://instaud.io/_/1R6P.mp3
+// Modul iPhone 2 : https://instaud.io/_/1R6S.mp3
+// Modul iPhone 3 : https://instaud.io/_/1R6T.mp3
+// Photo : https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg
 
 
 		require_once('./line_class.php');
@@ -145,7 +153,7 @@ if($message['type']=='text'){
 		);				
 	}
 
-	else if($pesan_datang=='hp'){
+	else if($pesan_datang=='modul'){
 		$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
@@ -364,11 +372,11 @@ else if($pesan_datang=='/mulai-iphone-1'){
         		   		'type' => 'buttons',	
         		   		'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo.png',
         				'title' => 'Download Aplikasi',
-        				'text' => 'Propana Reload',
+        				'text' => 'Telegram',
         				'actions' => [
         					[
         			    		'type' => 'uri',
-        			    		'label' => 'Aplikasi Propana',
+        			    		'label' => 'Aplikasi Telegram',
         			    		'uri' => 'http://bit.ly/2F01wyE'
         					]
         				]
@@ -376,7 +384,7 @@ else if($pesan_datang=='/mulai-iphone-1'){
         		),
 			array(
 				"type" => "audio",
-				"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
+				"originalContentUrl" => "https://instaud.io/_/1R6P.mp3",
 				"duration" => 14000
 			),
 			array(
@@ -400,6 +408,62 @@ else if($pesan_datang=='/mulai-iphone-1'){
 
            )
     );
+}
+
+else if($pesan_datang=='/mulai-iphone-2'){
+	$balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+        	array(
+					'type' => 'image',
+					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo5.jpg",
+					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo5.jpg"				
+					),
+			array(
+				"type" => "audio",
+				"originalContentUrl" => "https://instaud.io/_/1R6S.mp3",
+				"duration" => 14000
+			),
+			array(
+        		   'type' => 'template',	
+        		   'altText' => 'Lanjutkan Modul',
+        		   'template' =>[
+        		   		'type' => 'buttons',	
+        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+        				'title' => 'Lanjutkan Modul',
+        				'text' => 'Pilih Lanjutkan',
+        				'actions' => [
+        					[
+        			    		'type' => 'message',
+        			    		'label' => 'Lanjutkan',
+        			    		'text' => '/mulai-iphone-3'
+        					]
+        				]
+        			]
+        		),
+
+           )
+    );
+
+}
+
+else if($pesan_datang=='/mulai-iphone-3'){
+	$balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+        	array(
+					'type' => 'image',
+					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo6.jpg",
+					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo6.jpg"				
+					),
+			array(
+				"type" => "audio",
+				"originalContentUrl" => "https://instaud.io/_/1R6T.mp3",
+				"duration" => 14000
+			)
+           )
+    );
+
 }
 
 	else if($pesan_datang=='iphone'){
@@ -476,7 +540,7 @@ else if($pesan_datang=='menu'){
                     	        array(
                     	            'type' => 'message', // 類型 (訊息)
                     	            'label' => 'Modul', // 標籤 2
-                    	            'text' => 'HP' // 用戶發送文字
+                    	            'text' => 'Modul' // 用戶發送文字
                     	        ),
                     	        array(
                     	            'type' => 'uri', // 類型 (訊息)
@@ -558,11 +622,7 @@ else if($pesan_datang=='menu'){
 // }
 
 
-// Modul 1 : https://instaud.io/_/1R2o.mp3
-// Modul 2 : https://instaud.io/_/1R2q.mp3
-// Modul 3 : https://instaud.io/_/1R2r.mp3
-// Modul 4 : https://instaud.io/_/1R2s.mp3
-// Photo : https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg
+
 
 else if($pesan_datang=='.example'){
     $balas = array(
