@@ -210,6 +210,84 @@ else if($pesan_datang=='/about'){
 	}
 
 
+else if($pesan_datang=='/test'){
+	$balas = array(
+		'replyToken' => $replyToken,
+		'messages' => array(
+			array(
+				'type' => 'template',
+				'altText' => 'Contoh carousel',
+				'template' =>[
+					'type' => 'carousel',
+					'columns' => [
+						[
+							'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg',
+							'imageBackgroundColor' => '#FFFFFF',
+							'title' => 'Hello',
+							'text' => 'Desc',
+							'defaultAction' => [
+									'type' => 'uri',
+									'label' => 'View',
+									'uri' => 'html.com',
+									'actions' => [
+										[
+										'type'=> 'postback',
+										'label'=> 'Buy',
+										'data'=> 'action=buy&itemid=111'
+										],
+										[
+										'type'=> 'postback',
+										'label'=> 'Buy',
+										'data'=> 'action=buy&itemid=111'
+										],
+										[
+
+										'type'=> 'postback',
+										'label'=> 'Buy',
+										'data'=> 'action=buy&itemid=111'										
+										]
+									] 
+							] 
+						],
+												[
+							'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg',
+							'imageBackgroundColor' => '#FFFFFF',
+							'title' => 'Hello',
+							'text' => 'Desc',
+							'defaultAction' => [
+									'type' => 'uri',
+									'label' => 'View',
+									'uri' => 'html.com',
+									'actions' => [
+										[
+										'type'=> 'postback',
+										'label'=> 'Buy',
+										'data'=> 'action=buy&itemid=111'
+										],
+										[
+										'type'=> 'postback',
+										'label'=> 'Buy',
+										'data'=> 'action=buy&itemid=111'
+										],
+										[
+
+										'type'=> 'postback',
+										'label'=> 'Buy',
+										'data'=> 'action=buy&itemid=111'										
+										]
+									] 
+							] 
+						]
+					]
+
+				],
+				'imageAspectRatio'=> 'rectangle',
+				'imageSize'=> 'cover' 
+			)
+		)
+	);
+}
+
 else if($pesan_datang=='center'){
 	$balas = array(
 				'replyToken' => $replyToken,														
