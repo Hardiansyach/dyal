@@ -363,7 +363,7 @@ else if($pesan_datang=='audio'){
 			array(
 				"type" => "audio",
 				"originalContentUrl" => "https://raw.githubusercontent.com/alroysh/dyal/master/audio/modul1.mp3",
-				"duration" => 700000
+				"duration" => 14000
 			)
 		)
 	);
