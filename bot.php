@@ -237,7 +237,7 @@ else if($pesan_datang=='android'){
                                 array(
                                     'type' => 'uri', // 類型 (連結)
                                     'label' => 'Donload Aplikasi', // 標籤 3
-                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+                                    'uri' => 'http://propanareload.com/propanareload.apk' // 連結網址
                                 )
                             )
                         ),
