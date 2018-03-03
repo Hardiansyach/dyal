@@ -337,7 +337,7 @@ else if($pesan_datang=='android'){
                     'type' => 'carousel', // 類型 (旋轉木馬)
                     'columns' => array(
                         array(
-                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Aplikasi', // 標題 1 <不一定需要>
                             'text' => 'Download Aplikasi Propana Reload', // 文字 1
                             'actions' => array(
@@ -349,7 +349,7 @@ else if($pesan_datang=='android'){
                             )
                         ),
                         array(
-                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
                             'title' => 'Modul', // 標題 2 <不一定需要>
                             'text' => 'Belajar Memulai Aplikasi Android', // 文字 2
                             'actions' => array(
@@ -357,6 +357,18 @@ else if($pesan_datang=='android'){
                                     'type' => 'message', // 類型 (連結)
                                     'label' => 'Mulai Belajar', // 標籤 3
                                     'text' => '/mulai-android-1' // 連結網址
+                                ),
+                            )
+                        )
+                        array(
+                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+                            'title' => 'Penipuan', // 標題 2 <不一定需要>
+                            'text' => 'Hati Hati Dengan Penipuan! Baca Selengkapnya,', // 文字 2
+                            'actions' => array(
+                                array(
+                                    'type' => 'message', // 類型 (連結)
+                                    'label' => 'Penipuan', // 標籤 3
+                                    'text' => '/penipuan-online' // 連結網址
                                 ),
                             )
                         )
