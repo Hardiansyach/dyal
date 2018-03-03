@@ -136,7 +136,9 @@ if($message['type']=='text'){
 		Post : ".$jss->user->media->count."
 		Bio : ".$jss->user->biography."
 		Website : ".$jss->user->external_url."
-		Verified : ".$jss->user->is_verified."";		
+		Verified : ".$jss->user->is_verified."";
+
+
 		$balas = array(
 			'replyToken' => $replyToken,
 			'messages' => array(
@@ -154,10 +156,6 @@ if($message['type']=='text'){
 	}
 
 	else if($pesan_datang==$datac){
-		$api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
-		$jss = json_decode($api_ig);
-		$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
-
 		$balas = array(
 		    'replyToken' => $replyToken,
 		    'messages' => array(
@@ -168,8 +166,8 @@ if($message['type']=='text'){
 		                'type' => 'carousel', // 類型 (旋轉木馬)
 		                'columns' => array(
 		                    array(
-		                        'thumbnailImageUrl' => $profile_pic_url_hd, // 圖片網址 <不一定需要>
-		                        'title' => $data[1], // 標題 1 <不一定需要>
+		                        'thumbnailImageUrl' => .$profile_pic_url_hd., // 圖片網址 <不一定需要>
+		                        'title' => .$data[1]., // 標題 1 <不一定需要>
 		                        'text' => 'Description 1', // 文字 1
 		                        'actions' => array(
 		                            array(
