@@ -311,19 +311,19 @@ else if($pesan_datang=='menu'){
                             'text' => 'Pilihan Menu', // 文字 2
                             'actions' => array(
                                 array(
-                                    'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Admin 1', // 標籤 2
-                                    'text' => 'Admin 1' // 用戶發送文字
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Admin I', // 標籤 3
+                                    'uri' => 'https://line.me/ti/p/~dejody31' // 連結網址
                                 ),
                                 array(
-                                    'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Admin 2', // 標籤 2
-                                    'text' => 'Admin 2' // 用戶發送文字
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Admin II', // 標籤 3
+                                    'uri' => 'https://line.me/ti/p/~alroysh' // 連結網址
                                 ),
                                 array(
-                                    'type' => 'message', // 類型 (訊息)
-                                    'label' => 'Line Official', // 標籤 2
-                                    'text' => 'Line Official' // 用戶發送文字
+                                    'type' => 'uri', // 類型 (連結)
+                                    'label' => 'Line Official', // 標籤 3
+                                    'uri' => 'https://line.me/ti/p/%40vds1946l' // 連結網址
                                 )
                             )
                         )
