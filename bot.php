@@ -1,4 +1,4 @@
-	<?php
+		<?php
 				date_default_timezone_set('Asia/Singapore');
 				$wita= date('H.i.s');
 				date_default_timezone_set('Asia/Jakarta');
@@ -160,12 +160,17 @@
 				$jss = json_decode($api_ig);
 				$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
 
-				$text1 = "
-				Bio : ".$jss->user->biography."
+				$text1 = 
+				"Profil Instagram ".$data[1]."
+				Username : ".$data[1]."
 				Followers : ".$jss->user->followed_by->count."
 				Following : ".$jss->user->follows->count."
-				";
+				Post : ".$jss->user->media->count."
+				Bio : ".$jss->user->biography."
+				Website : ".$jss->user->external_url."
+				Verified : ".$jss->user->is_verified."";
 
+				
 				$balas = array(
 		        'replyToken' => $replyToken,
 		        'messages' => array(
