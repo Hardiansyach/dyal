@@ -270,8 +270,8 @@ else if($pesan_datang=='/mulai-android-2'){
         'messages' => array(
         	array(
 					'type' => 'image',
-					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
-					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
+					'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo3.jpg",
+					'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo3.jpg"				
 					),
 			array(
 				"type" => "audio",
