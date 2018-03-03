@@ -370,6 +370,22 @@ else if($pesan_datang=='audio'){
 
 }
 
+else if($pesan_datang=='image'){
+	$balas = array(
+		'replyToken' => $replyToken,														
+		'messages' => array(
+			array(
+								'type' => 'image',
+								'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo1.jpg",
+								'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo1.jpg" 					
+								)
+		)
+	);
+
+}
+
+
+
 else if($pesan_datang=='.example'){
     $balas = array(
         'replyToken' => $replyToken,
