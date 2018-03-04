@@ -297,7 +297,7 @@
 							"type" => "audio",
 							"originalContentUrl" => "https://instaud.io/_/1R2s.mp3",
 							"duration" => 14000
-						)
+						),
 
 						array(
 			        		   'type' => 'template',	
@@ -481,7 +481,7 @@
 							"type" => "audio",
 							"originalContentUrl" => "https://instaud.io/_/1R6T.mp3",
 							"duration" => 14000
-						)
+						),
 
 						array(
 			        		   'type' => 'template',	
