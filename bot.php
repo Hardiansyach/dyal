@@ -601,12 +601,12 @@
 			                                array(
 			                                    'type' => 'uri', // 類型 (訊息)
 			                                    'label' => 'No Center', // 標籤 2
-			                                    'uri' => 'https://justpaste.it/1hsw3' // 用戶發送文字
+			                                    'uri' => 'http://dyalbalistore.blogspot.co.id/p/nomor-center.html' // 用戶發送文字
 			                                ),
 			                    	        array(
 			                    	            'type' => 'uri', // 類型 (訊息)
 			                    	            'label' => 'Format Transaksi', // 標籤 2
-			                    	            'uri' => 'https://justpaste.it/1hsof' // 用戶發送文字
+			                    	            'uri' => 'http://dyalbalistore.blogspot.co.id/p/format-transaksi.html' // 用戶發送文字
 			                                ),
 			                                array(
 			                                    'type' => 'uri', // 類型 (訊息)
