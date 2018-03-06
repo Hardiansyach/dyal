@@ -355,18 +355,7 @@
 			                                ),
 			                            )
 			                        ),
-			                        array(
-			                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Penipuan', // 標題 2 <不一定需要>
-			                            'text' => 'Hati Hati Dengan Penipuan! Baca Selengkapnya,', // 文字 2
-			                            'actions' => array(
-			                                array(
-			                                    'type' => 'message', // 類型 (連結)
-			                                    'label' => 'Penipuan', // 標籤 3
-			                                    'text' => '/penipuan-online' // 連結網址
-			                                ),
-			                            )
-			                        )
+
 			                    )
 			                )
 			            )
@@ -539,18 +528,7 @@
 			                                ),
 			                            )
 			                        ),
-			                        array(
-			                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Penipuan', // 標題 2 <不一定需要>
-			                            'text' => 'Hati Hati Dengan Penipuan! Baca Selengkapnya,', // 文字 2
-			                            'actions' => array(
-			                                array(
-			                                    'type' => 'message', // 類型 (連結)
-			                                    'label' => 'Penipuan', // 標籤 3
-			                                    'text' => '/penipuan-online' // 連結網址
-			                                ),
-			                            )
-			                        )
+
 			                    )
 			                )
 			            )
@@ -579,17 +557,17 @@
 			                    	        array(
 			                    	            'type' => 'message', // 類型 (訊息)
 			                    	            'label' => 'Modul', // 標籤 2
-			                    	            'text' => 'Modul' // 用戶發送文字
+			                    	            'text' => '/modul' // 用戶發送文字
+			                    	        ),
+			                    	        array(
+			                    	            'type' => 'message', // 類型 (訊息)
+			                    	            'label' => 'Modul Video', // 標籤 2
+			                    	            'text' => '/modul-video' // 用戶發送文字
 			                    	        ),
 			                    	        array(
 			                    	            'type' => 'uri', // 類型 (訊息)
 			                    	            'label' => 'Info Promo', // 標籤 2
 			                    	            'uri' => 'https://t.me/propana_info' // 用戶發送文字
-			                    	        ),
-			                    	        array(
-			                    	            'type' => 'uri', // 類型 (訊息)
-			                    	            'label' => 'Web Report', // 標籤 2
-			                    	            'uri' => 'http://bit.ly/2rmAIOR' // 用戶發送文字
 			                    	        )
 			                    	    )
 			                    	),
@@ -612,6 +590,28 @@
 			                                    'type' => 'uri', // 類型 (訊息)
 			                                    'label' => 'Komplain Transaksi', // 標籤 2
 			                                    'uri' => 'https://t.me/propanareload_cs' // 用戶發送文字
+			                                )
+			                            )
+			                        ),
+			                        array(
+			                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+			                            'title' => 'Pengaturan', // 標題 2 <不一定需要>
+			                            'text' => 'Pilihan Menu', // 文字 2
+			                            'actions' => array(
+			                    	        array(
+			                    	            'type' => 'uri', // 類型 (訊息)
+			                    	            'label' => 'Web Report', // 標籤 2
+			                    	            'uri' => 'http://bit.ly/2rmAIOR' // 用戶發送文字
+			                    	        ),
+			                    	        array(
+			                    	            'type' => 'message', // 類型 (訊息)
+			                    	            'label' => 'Hati-Hati Penipuan', // 標籤 2
+			                    	            'text' => '/penipuan-online' // 用戶發送文字
+			                    	        ),
+			                                array(
+			                                    'type' => 'uri', // 類型 (連結)
+			                                    'label' => 'Line Official', // 標籤 3
+			                                    'uri' => 'https://line.me/ti/p/%40vds1946l' // 連結網址
 			                                )
 			                            )
 			                        ),
