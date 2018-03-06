@@ -611,7 +611,7 @@
 			                                array(
 			                                    'type' => 'uri', // 類型 (連結)
 			                                    'label' => 'Data Center', // 標籤 3
-			                                    'uri' => 'https://line.me/ti/p/%40vds1946l' // 連結網址
+			                                    'uri' => 'http://dyalbalistore.blogspot.co.id/p/data-center.html' // 連結網址
 			                                )
 			                            )
 			                        ),
