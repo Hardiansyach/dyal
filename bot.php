@@ -659,37 +659,37 @@
 			                    'columns' => array(
 			                    	array(
 			                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-			                    	    'title' => 'Pengaturan', // 標題 1 <不一定需要>
-			                    	    'text' => 'Pilihan Menu', // 文字 1
+			                    	    'title' => 'Aplikasi Android', // 標題 1 <不一定需要>
+			                    	    'text' => 'Modul Video Aplikasi Android', // 文字 1
 			                    	    'actions' => array(
 			                    	        array(
 			                    	            'type' => 'message', // 類型 (訊息)
-			                    	            'label' => 'Modul', // 標籤 2
-			                    	            'text' => '/modul' // 用戶發送文字
+			                    	            'label' => 'Kirim Video', // 標籤 2
+			                    	            'text' => '/video-android' // 用戶發送文字
 			                    	        )
 			                    	    )
 			                    	),
 			                        array(
 			                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Pengaturan', // 標題 1 <不一定需要>
-			                            'text' => 'Pilihan Menu', // 文字 1
+			                            'title' => 'Telegram', // 標題 1 <不一定需要>
+			                            'text' => 'Modul Video Telegram', // 文字 1
 			                            'actions' => array(
 			                    	        array(
 			                    	            'type' => 'message', // 類型 (訊息)
-			                    	            'label' => 'Modul', // 標籤 2
-			                    	            'text' => '/modul' // 用戶發送文字
+			                    	            'label' => 'Kirim Video', // 標籤 2
+			                    	            'text' => '/video-telegram' // 用戶發送文字
 			                    	        )
 			                            )
 			                        ),
 			                        array(
 			                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Pengaturan', // 標題 2 <不一定需要>
-			                            'text' => 'Pilihan Menu', // 文字 2
+			                            'title' => 'Xabber', // 標題 2 <不一定需要>
+			                            'text' => 'Modul Video Xabber', // 文字 2
 			                            'actions' => array(
 			                    	        array(
 			                    	            'type' => 'message', // 類型 (訊息)
-			                    	            'label' => 'Modul', // 標籤 2
-			                    	            'text' => '/modul' // 用戶發送文字
+			                    	            'label' => 'Kirim Video', // 標籤 2
+			                    	            'text' => '/video-xabber' // 用戶發送文字
 			                    	        )
 			                            )
 			                        )
