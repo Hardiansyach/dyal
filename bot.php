@@ -156,7 +156,7 @@
 				}
 
 
-				else if($pesan_datang=='modul'){
+				else if($pesan_datang=='/modul'){
 					$balas = array(
 						'replyToken' => $replyToken,														
 						'messages' => array(
