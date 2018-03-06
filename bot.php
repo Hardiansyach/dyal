@@ -659,37 +659,37 @@
 			                    'columns' => array(
 			                    	array(
 			                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-			                    	    'title' => 'Aplikasi Android', // 標題 1 <不一定需要>
-			                    	    'text' => 'Modul Video Aplikasi Android', // 文字 1
+			                    	    'title' => 'Pengaturan', // 標題 1 <不一定需要>
+			                    	    'text' => 'Pilihan Menu', // 文字 1
 			                    	    'actions' => array(
 			                    	        array(
 			                    	            'type' => 'message', // 類型 (訊息)
-			                    	            'label' => 'Video Aplikasi Android', // 標籤 2
-			                    	            'text' => '/video-android' // 用戶發送文字
+			                    	            'label' => 'Modul', // 標籤 2
+			                    	            'text' => '/modul' // 用戶發送文字
 			                    	        )
 			                    	    )
 			                    	),
 			                        array(
 			                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Telegram', // 標題 1 <不一定需要>
-			                            'text' => 'Telegram', // 文字 1
+			                            'title' => 'Pengaturan', // 標題 1 <不一定需要>
+			                            'text' => 'Pilihan Menu', // 文字 1
 			                            'actions' => array(
-			                    	        array(
-			                    	            'type' => 'message', // 類型 (訊息)
-			                    	            'label' => 'Video Telegram', // 標籤 2
-			                    	            'text' => '/video-telegram' // 用戶發送文字
-			                    	        )
+			                                array(
+			                                    'type' => 'uri', // 類型 (訊息)
+			                                    'label' => 'No Center', // 標籤 2
+			                                    'uri' => 'http://dyalbalistore.blogspot.co.id/p/nomor-center.html' // 用戶發送文字
+			                                )
 			                            )
 			                        ),
 			                        array(
 			                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Xabber', // 標題 2 <不一定需要>
-			                            'text' => 'Modul Video Xabber', // 文字 2
+			                            'title' => 'Pengaturan', // 標題 2 <不一定需要>
+			                            'text' => 'Pilihan Menu', // 文字 2
 			                            'actions' => array(
 			                    	        array(
-			                    	            'type' => 'message', // 類型 (訊息)
-			                    	            'label' => 'Video Xabber', // 標籤 2
-			                    	            'text' => '/video-xabber' // 用戶發送文字
+			                    	            'type' => 'uri', // 類型 (訊息)
+			                    	            'label' => 'Web Report', // 標籤 2
+			                    	            'uri' => 'http://bit.ly/2rmAIOR' // 用戶發送文字
 			                    	        )
 			                            )
 			                        ),
