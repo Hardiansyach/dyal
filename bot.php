@@ -692,6 +692,18 @@
 			                    	            'text' => '/video-xabber' // 用戶發送文字
 			                    	        )
 			                            )
+			                        ),
+			                        array(
+			                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+			                            'title' => 'WhatsApp', // 標題 2 <不一定需要>
+			                            'text' => 'Modul Video WhatsApp', // 文字 2
+			                            'actions' => array(
+			                    	        array(
+			                    	            'type' => 'message', // 類型 (訊息)
+			                    	            'label' => 'Kirim Video', // 標籤 2
+			                    	            'text' => '/video-whatsapp' // 用戶發送文字
+			                    	        )
+			                            )
 			                        )
 			                    )
 			                )
