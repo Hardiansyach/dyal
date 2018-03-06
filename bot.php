@@ -692,6 +692,18 @@
 			                    	            'text' => '/video-xabber' // 用戶發送文字
 			                    	        )
 			                            )
+			                        ),
+			                        array(
+			                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+			                            'title' => 'Contact Admin', // 標題 2 <不一定需要>
+			                            'text' => 'Pilihan Menu', // 文字 2
+			                            'actions' => array(
+			                                array(
+			                                    'type' => 'uri', // 類型 (連結)
+			                                    'label' => 'Admin I', // 標籤 3
+			                                    'uri' => 'https://line.me/ti/p/~dejody31' // 連結網址
+			                                )
+			                            )
 			                        )
 			                    )
 			                )
