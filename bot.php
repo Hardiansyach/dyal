@@ -578,7 +578,7 @@
 			                            'actions' => array(
 			                                array(
 			                                    'type' => 'uri', // 類型 (訊息)
-			                                    'label' => 'No Center', // 標籤 2
+			                                    'label' => 'Nomor Center', // 標籤 2
 			                                    'uri' => 'http://dyalbalistore.blogspot.co.id/p/nomor-center.html' // 用戶發送文字
 			                                ),
 			                    	        array(
@@ -610,7 +610,7 @@
 			                    	        ),
 			                                array(
 			                                    'type' => 'uri', // 類型 (連結)
-			                                    'label' => 'Line Official', // 標籤 3
+			                                    'label' => 'Data Center', // 標籤 3
 			                                    'uri' => 'https://line.me/ti/p/%40vds1946l' // 連結網址
 			                                )
 			                            )
