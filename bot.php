@@ -787,7 +787,7 @@
 				                                array(
 				                                    'type' => 'message', // 類型 (訊息)
 				                                    'label' => 'Message example 1', // 標籤 2
-				                                    'text' => $aDataTableHeaderHTML // 用戶發送文字
+				                                    'text' => $aDataTableHeaderHTML[1] // 用戶發送文字
 				                                ),
 				                                array(
 				                                    'type' => 'uri', // 類型 (連結)
