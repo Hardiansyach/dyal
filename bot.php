@@ -40,6 +40,25 @@
 					$datac = "/ig:".$data[1]."";
 					$datab = "/wiki:".$data[1]."";
 
+
+			function bacaURL($url){
+			  $session = curl_init(); // buat session
+			    // setting CURL
+			  curl_setopt($session, CURLOPT_URL, $url);
+			  curl_setopt($session, CURLOPT_RETURNTRANSFER, 1);
+			     $hasil = curl_exec($session);
+			     curl_close($session);
+			     return $hasil;
+			}
+
+
+
+
+
+			  $sumber =  bacaURL('http://propana.otoreport.com/harga.js.php?up=10000');
+			  $ambil_kata = explode('<div class="tablewrapper">', $sumber);
+			  $ambil_kata_lagi = explode('</tr>', $ambil_kata[1]);
+
 			function CallLineGetName($access_token,$userId)
 			{
 
@@ -726,7 +745,35 @@
 			// 	);
 
 			// }
+				else if($pesan_datang=='.test'){
+				    $balas = array(
+				        'replyToken' => $replyToken,
+				        'messages' => array(
+				            array(
+				                'type' => 'template', // 訊息類型 (模板)
+				                'altText' => 'Example buttons template', // 替代文字
+				                'template' => array(
+				                    'type' => 'carousel', // 類型 (旋轉木馬)
+				                    'columns' => array(
+				                        array(
+				                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+				                            'title' => $ambil_kata_lagi[2], // 標題 1 <不一定需要>
+				                            'text' => $ambil_kata_lagi[2], // 文字 1
+				                            'actions' => array(
+				                                array(
+				                                    'type' => 'message', // 類型 (訊息)
+				                                    'label' => $ambil_kata_lagi[2], // 標籤 2
+				                                    'text' => $ambil_kata_lagi[2] // 用戶發送文字
+				                                )
+				                            )
+				                        )
+				                    )
+				                )
+				            )
+				        )
+				    );
 
+					}
 
 
 
