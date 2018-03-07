@@ -763,7 +763,7 @@
 				                                array(
 				                                    'type' => 'message', // 類型 (訊息)
 				                                    'label' => "contoh", // 標籤 2
-				                                    'text' => "contoh" // 用戶發送文字
+				                                    'text' => $ambil_kata_lagi[2] // 用戶發送文字
 				                                )
 				                            )
 				                        )
