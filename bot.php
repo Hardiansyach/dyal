@@ -91,7 +91,7 @@
 
 			  //echo $ambil_kata_lagi[2];
 			  $DOM = new DOMDocument();
-			  $DOM->loadHTML($ambil_kata_lagi[$i]);
+			  $DOM->loadHTML($ambil_kata_lagi[2]);
 			  
 			  $Header = $DOM->getElementsByTagName('td');
 
@@ -781,17 +781,17 @@
 				                            'actions' => array(
 				                                array(
 				                                    'type' => 'postback', // 類型 (回傳)
-				                                    'label' => $aDataTableHeaderHTML[1], // 標籤 1
+				                                    'label' => 'postback 1', // 標籤 1
 				                                    'data' => '/mulai-android-1' // 資料
 				                                ),
 				                                array(
 				                                    'type' => 'message', // 類型 (訊息)
-				                                    'label' => $aDataTableHeaderHTML[2], // 標籤 2
-				                                    'text' => 'Message example 1' // 用戶發送文字
+				                                    'label' => 'Message example 1', // 標籤 2
+				                                    'text' => $aDataTableHeaderHTML // 用戶發送文字
 				                                ),
 				                                array(
 				                                    'type' => 'uri', // 類型 (連結)
-				                                    'label' => $aDataTableHeaderHTML[3], // 標籤 3
+				                                    'label' => 'Uri example 1', // 標籤 3
 				                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
 				                                )
 				                            )
