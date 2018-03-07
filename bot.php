@@ -126,7 +126,7 @@
 
 				else if($pesan_datang==$databc){
 
-					$text1 = "http://propana.otoreport.com/harga.js.php?prd=".$databc."&up=100";
+					$text1 = "http://propana.otoreport.com/harga.js.php?prd=".$data[1]."&up=100";
 					$balas = array(
 						'replyToken' => $replyToken,
 						'messages' => array(
