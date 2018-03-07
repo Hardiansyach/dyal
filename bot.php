@@ -37,9 +37,10 @@
 					$pesan_datang = strtolower($message['text']);
 					$userx = $message['text'];
 					$data = explode(":", $userx);
+					$dataxx = explode(".", $userx);
 					$datac = "/ig:".$data[1]."";
 					$datab = "/wiki:".$data[1]."";
-					$databc = strtolower("h:".$data[1]."");
+					$databc = strtolower("h:".$dataxx[1]."");
 
 			function CallLineGetName($access_token,$userId)
 			{
@@ -126,7 +127,7 @@
 
 				else if($pesan_datang==$databc){
 
-					$text1 = "http://propana.otoreport.com/harga.js.php?prd=".$data[1]."&up=100";
+					$text1 = "http://propana.otoreport.com/harga.js.php?prd=".$dataxx[1]."&up=100";
 					$balas = array(
 						'replyToken' => $replyToken,
 						'messages' => array(
