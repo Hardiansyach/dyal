@@ -39,6 +39,7 @@
 					$data = explode(":", $userx);
 					$datac = "/ig:".$data[1]."";
 					$datab = "/wiki:".$data[1]."";
+					$databc = strtolower("h:".$data[1]."");
 
 			function CallLineGetName($access_token,$userId)
 			{
@@ -122,6 +123,20 @@
 								);
 						}
 
+
+				else if($pesan_datang==$databc){
+
+					$text1 = "http://propana.otoreport.com/harga.js.php?prd=".$databc."&up=100";
+					$balas = array(
+						'replyToken' => $replyToken,
+						'messages' => array(
+						array(
+							'type' => 'text',
+							'text' => $text1					
+							)
+						)
+					);			
+				}
 
 				else if($pesan_datang==$datac){
 					$api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
