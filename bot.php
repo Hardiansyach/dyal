@@ -757,13 +757,13 @@
 				                    'columns' => array(
 				                        array(
 				                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-				                            'title' => $ambil_kata_lagi[2], // 標題 1 <不一定需要>
-				                            'text' => $ambil_kata_lagi[2], // 文字 1
+				                            'title' => "contoh", // 標題 1 <不一定需要>
+				                            'text' => "contoh", // 文字 1
 				                            'actions' => array(
 				                                array(
 				                                    'type' => 'message', // 類型 (訊息)
-				                                    'label' => $ambil_kata_lagi[2], // 標籤 2
-				                                    'text' => $ambil_kata_lagi[2] // 用戶發送文字
+				                                    'label' => "contoh", // 標籤 2
+				                                    'text' => "contoh" // 用戶發送文字
 				                                )
 				                            )
 				                        )
