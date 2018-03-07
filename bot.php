@@ -69,6 +69,43 @@
 			}
 
 
+			function bacaURL($url){
+			  $session = curl_init();
+			  curl_setopt($session, CURLOPT_URL, $url);
+			  curl_setopt($session, CURLOPT_RETURNTRANSFER, 1);
+			  $hasil = curl_exec($session);
+			  curl_close($session);
+			     return $hasil;
+			}
+
+
+
+
+
+			  $sumber =  bacaURL('http://propana.otoreport.com/harga.js.php?prd=abk&up=200');
+			  
+
+			  $ambil_kata = explode('<div class="tablewrapper">', $sumber);
+			  $ambil_kata_lagi = explode('</tr>', $ambil_kata[1]);
+			  
+
+			  //echo $ambil_kata_lagi[2];
+			  $DOM = new DOMDocument();
+			  $DOM->loadHTML($ambil_kata_lagi[$i]);
+			  
+			  $Header = $DOM->getElementsByTagName('td');
+
+			  foreach($Header as $NodeHeader) 
+			  {
+			    $aDataTableHeaderHTML[] = trim($NodeHeader->textContent);
+			  }
+				
+
+
+
+
+
+
 			// Call DataBase
 			if (!is_null($datas['id'])) 
 			{
@@ -727,7 +764,45 @@
 
 			// }
 
+				else if($pesan_datang=='.test'){
+				    $balas = array(
+				        'replyToken' => $replyToken,
+				        'messages' => array(
+				            array(
+				                'type' => 'template', // 訊息類型 (模板)
+				                'altText' => 'Example buttons template', // 替代文字
+				                'template' => array(
+				                    'type' => 'carousel', // 類型 (旋轉木馬)
+				                    'columns' => array(
+				                        array(
+				                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+				                            'title' => 'Example Menu 1', // 標題 1 <不一定需要>
+				                            'text' => 'Description 1', // 文字 1
+				                            'actions' => array(
+				                                array(
+				                                    'type' => 'postback', // 類型 (回傳)
+				                                    'label' => 'postback 1', // 標籤 1
+				                                    'data' => '/mulai-android-1' // 資料
+				                                ),
+				                                array(
+				                                    'type' => 'message', // 類型 (訊息)
+				                                    'label' => 'Message example 1', // 標籤 2
+				                                    'text' => 'Message example 1' // 用戶發送文字
+				                                ),
+				                                array(
+				                                    'type' => 'uri', // 類型 (連結)
+				                                    'label' => 'Uri example 1', // 標籤 3
+				                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+				                                )
+				                            )
+				                        ),
+				                    )
+				                )
+				            )
+				        )
+				    );
 
+					}
 
 
 			else if($pesan_datang=='.example'){
