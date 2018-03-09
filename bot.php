@@ -133,22 +133,13 @@
 					$json = json_decode($content,true);
 					
 					foreach ($json as $i) {
-					    $a = $i['kode'];
-					    $b = $i['nama'];
-					    $c = $i['harga'];
-					    $d = $i['status'];
+					    $a = $i->kode;
+					    $b = $i->nama;
+					    $c = $i->harga;
+					    $d = $i->status;
 					
-						$text1 = 
-						"-> Contoh
-						KODE : ".$a."
-						KETERANGAN : ".$b."
-						HARGA : ".$c."
-						STATUS : ".$d."
-						";
-
-
 					}
-
+					$text1 = $a;
 
 					$balas = array(
 						'replyToken' => $replyToken,
