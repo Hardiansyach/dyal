@@ -138,18 +138,18 @@
 					    $c = $i['harga'];
 					    $d = $i['status'];
 					
-					// $text1 = 
-					// "-> Contoh
-					// KODE : ".$a."
-					// KETERANGAN : ".$b."
-					// HARGA : ".$c."
-					// STATUS : ".$d."
-					// ";
+						$text1 = 
+						"-> Contoh
+						KODE : ".$a."
+						KETERANGAN : ".$b."
+						HARGA : ".$c."
+						STATUS : ".$d."
+						";
 
 
 					}
 
-$text1 = "hallo";
+
 					$balas = array(
 						'replyToken' => $replyToken,
 						'messages' => array(
