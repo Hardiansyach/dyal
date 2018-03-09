@@ -37,10 +37,12 @@
 					$pesan_datang = strtolower($message['text']);
 					$userx = $message['text'];
 					$data = explode(":", $userx);
-					$dataxx = explode(":", $userx);
 					$datac = "/ig:".$data[1]."";
 					$datab = "/wiki:".$data[1]."";
-					$databc = strtolower("h:".$dataxx[1]."");
+					$databc = strtolower("h ".$data[1]."");
+
+				
+
 
 			function CallLineGetName($access_token,$userId)
 			{
@@ -126,8 +128,28 @@
 
 
 				else if($pesan_datang==$databc){
+					$url = "http://dyalbalistore.epizy.com/clone.php?kode=".$data[1]."";
+					$content = file_get_contents($url);
+					$json = json_decode($content,true);
+					
+					foreach ($json as $i) {
+					    $a = $i['kode'];
+					    $b = $i['nama'];
+					    $c = $i['harga'];
+					    $d = $i['status'];
+					
+					$text1 = 
+					"-> Contoh
+					KODE : ".$a."
+					KETERANGAN : ".$b."
+					HARGA : ".$c."
+					STATUS : ".$d."
+					";
 
-					$text1 = "http://propana.otoreport.com/harga.js.php?prd=".$dataxx[1]."&up=100";
+
+					}
+
+
 					$balas = array(
 						'replyToken' => $replyToken,
 						'messages' => array(
@@ -136,7 +158,7 @@
 							'text' => $text1					
 							)
 						)
-					);			
+					);				
 				}
 
 				else if($pesan_datang==$datac){
