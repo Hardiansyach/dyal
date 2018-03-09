@@ -130,18 +130,7 @@
 				else if($pesan_datang==$databc){
 					$url = "http://dyalbalistore.epizy.com/clone.php?kode=".$data[1]."";
 					$content = file_get_contents($url);
-					$json = json_decode($content,true);
-					
-					foreach ($json as $i) {
-					    $a = $i['kode'];
-					    $b = $i['nama'];
-					    $c = $i['harga'];
-					    $d = $i['status'];
-					
-						$text1 = $a;
-
-
-					}
+					$text1 = $content;
 
 
 					$balas = array(
