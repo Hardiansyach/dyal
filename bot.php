@@ -129,8 +129,16 @@
 
 				else if($pesan_datang==$databc){
 					$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
-					header('Content-Type: application/json');
 					$content = file_get_contents($url);
+					$json = json_decode($content,true);
+
+					    foreach ($json as $i  => $value) {
+						$a = $i['kode'];
+						$b = $i['nama'];
+						$c = $i['harga'];
+						$d = $i['status'];
+					    }
+					
 					header('Content-Type: application/json');
 					$text1 = $content;
 
@@ -140,7 +148,7 @@
 						'messages' => array(
 						array(
 							'type' => 'text',
-							'text' => $text1					
+							'text' => $a					
 							)
 						)
 					);				
