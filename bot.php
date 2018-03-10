@@ -129,7 +129,9 @@
 
 				else if($pesan_datang==$databc){
 					$url = "http://dyalbalistore.epizy.com/clone.php?kode=".$data[1]."";
+					header('Content-Type: application/json');
 					$content = file_get_contents($url);
+					header('Content-Type: application/json');
 					$text1 = $content;
 
 
