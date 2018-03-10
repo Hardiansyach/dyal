@@ -1,4 +1,4 @@
-			<?php
+<?php
 					date_default_timezone_set('Asia/Singapore');
 					$wita= date('H.i.s');
 					date_default_timezone_set('Asia/Jakarta');
@@ -128,7 +128,7 @@
 
 
 				else if($pesan_datang==$databc){
-					$url = "http://dyalbalistore.epizy.com/clone.php?kode=".$data[1]."";
+					$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
 					header('Content-Type: application/json');
 					$content = file_get_contents($url);
 					header('Content-Type: application/json');
