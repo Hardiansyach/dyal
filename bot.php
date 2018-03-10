@@ -148,7 +148,7 @@
 						'messages' => array(
 						array(
 							'type' => 'text',
-							'text' => $a					
+							'text' => $text1					
 							)
 						)
 					);				
