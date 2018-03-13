@@ -742,7 +742,7 @@
 				else if($pesan_datang==$databc){
 
 
-				$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
+				$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."&up=200";
 				$content = file_get_contents($url);
 				$json = json_decode($content,true);
 				$judul = html_entity_decode($json['judul']);
