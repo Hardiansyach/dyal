@@ -131,16 +131,9 @@
 					$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
 					$content = file_get_contents($url);
 					$json = json_decode($content,true);
-
-					    foreach ($json as $i  => $value) {
-						$a = $i['kode'];
-						$b = $i['nama'];
-						$c = $i['harga'];
-						$d = $i['status'];
-					    }
+					$judul = $json['judul'];
 					
-					header('Content-Type: application/json');
-					$text1 = $content;
+					$text1 = $judul;
 
 
 					$balas = array(
