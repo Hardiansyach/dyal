@@ -767,7 +767,7 @@
 	                    );
 
 
-							while($no <= count($json['detail'])){ 
+							while($no <= 10){ 
 								$kode = $json['detail'][$no]['kode'];
 								$nama = $json['detail'][$no]['nama'];
 								$harga = $json['detail'][$no]['harga'];
