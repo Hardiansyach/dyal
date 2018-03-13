@@ -750,6 +750,7 @@
 				$no = 1;
 				while($no <= count($json['detail'])){ 
 					$kode = $json['detail'][$no]['kode'];
+					$nama = $json['detail'][$no]['nama'];
 					$harga = $json['detail'][$no]['harga'];
 					$status = $json['detail'][$no]['status'];
 				   	$balas = array(
@@ -764,7 +765,7 @@
 				   	                    array(
 				   	                        'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
 				   	                        'title' => $judul, // 標題 1 <不一定需要>
-				   	                        'text' => $kode, // 文字 1
+				   	                        'text' => $nama, // 文字 1
 				   	                        'actions' => array(
 				   	                            array(
 				   	                                'type' => 'postback', // 類型 (回傳)
