@@ -772,6 +772,14 @@
 								$nama = $json['detail'][$no]['nama'];
 								$harga = $json['detail'][$no]['harga'];
 								$status = $json['detail'][$no]['status'];
+
+								if($status == "open"){
+									$status = "Tersedia";
+								}
+								else{
+									$status = "Gangguan";
+								}
+
 								$bajing = 	array(
 						   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
 						   	                        'title' => $judul, // 標題 1 <不一定需要>
