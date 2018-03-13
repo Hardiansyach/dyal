@@ -749,9 +749,9 @@
 					
 				$no = 1;
 				while($no <= count($json['detail'])){ 
-				   	$kode = $json['detail'][$no++]['kode'];
-				   	$harga = $json['detail'][$no++]['harga'];
-				   	$status = $json['detail'][$no++]['status'];
+					$kode = $json['detail'][$no]['kode'];
+					$harga = $json['detail'][$no]['harga'];
+					$status = $json['detail'][$no]['status'];
 				   	$balas = array(
 				   	    'replyToken' => $replyToken,
 				   	    'messages' => array(
@@ -790,7 +790,7 @@
 				   	);
 				}
 			    
-
+				$no++
 				}
 
 
