@@ -127,7 +127,7 @@
 						}
 
 
-				else if($pesan_datang==$databc){
+				else if($pesan_datang==$databccccce){
 					$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
 					$content = file_get_contents($url);
 					$json = json_decode($content,true);
@@ -739,7 +739,7 @@
 
 
 
-				else if($pesan_datang==$dataccc){
+				else if($pesan_datang==$databc){
 
 
 				$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
