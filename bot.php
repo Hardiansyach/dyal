@@ -747,7 +747,11 @@
 				$json = json_decode($content,true);
 				$judul = html_entity_decode($json['judul']);
 				$no = 1;
-				$balas = array(
+				$jumlahpesan = 1;
+				if(count($json['detail']) > 10){
+					$jumlah = ceil(count($json['detail'])/10);
+					while($jumlahpesan <= $jumlah){
+						$balas = array(
                         'replyToken' => $replyToken,
                         'messages' => array(
                             array(
@@ -805,6 +809,67 @@
 							   	array_push($balas['messages'][0]['template']['columns'], $bajing);
 							   $no++;
 						}
+					}
+
+				}else{
+
+					$no = 1;
+					$balas = array(
+	                        'replyToken' => $replyToken,
+	                        'messages' => array(
+	                            array(
+	                                'type' => 'template', // 訊息類型 (模板)
+	                                'altText' => 'Example buttons template', // 替代文字
+	                                'template' => array(
+	                                    'type' => 'carousel', // 類型 (旋轉木馬)
+	                                    'columns' =>  array()
+
+	                                    )
+	                                )
+	                            )
+	                        
+		                    );
+
+
+								while($no <= count($json['detail'])){ 
+									$kode = $json['detail'][$no]['kode'];
+									$nama = $json['detail'][$no]['nama'];
+									$harga = $json['detail'][$no]['harga'];
+									$status = $json['detail'][$no]['status'];
+
+									if($status == "open"){
+										$status = "Tersedia";
+									}
+									else{
+										$status = "Gangguan";
+									}
+
+									$bajing = 	array(
+							   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+							   	                        'title' => $judul, // 標題 1 <不一定需要>
+							   	                        'text' => $nama, // 文字 1
+							   	                        'actions' => array(
+							   	                            array(
+							   	                                'type' => 'postback', // 類型 (回傳)
+							   	                                'label' => $kode, // 標籤 1
+							   	                                'data' => '/mulai-android-1' // 資料
+							   	                            ),
+							   	                            array(
+							   	                                'type' => 'postback', // 類型 (回傳)
+							   	                                'label' => $harga, // 標籤 1
+							   	                                'data' => '/mulai-android-1' // 資料
+							   	                            ),
+							   	                            array(
+							   	                                'type' => 'postback', // 類型 (回傳)
+							   	                                'label' => $status, // 標籤 1
+							   	                                'data' => '/mulai-android-1' // 資料
+							   	                            )
+							   	                        )
+							   	                    );
+								   	array_push($balas['messages'][0]['template']['columns'], $bajing);
+								   $no++;
+							}
+				}
 	    
 
 				}
