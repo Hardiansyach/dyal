@@ -133,7 +133,7 @@
 					$json = json_decode($content,true);
 					$judul = $json['judul'];
 					
-					$text1 = $judul;
+					$text1 = html_entity_decode($judul);
 
 
 					$balas = array(
