@@ -767,8 +767,8 @@
 				$no = 1;
 				$jumlahpesan = 1;
 				if(count($json['detail']) > 10){
-					$jumlah = ceil(count($json['detail'])/10);
-					while($jumlahpesan <= $jumlah){
+					//$jumlah = ceil(count($json['detail'])/10);
+					while($jumlahpesan <= 2){
 						$balas = array(
                         'replyToken' => $replyToken,
                         'messages' => array(
