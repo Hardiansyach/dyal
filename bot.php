@@ -743,59 +743,78 @@
 
 
 				$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
-                $content = file_get_contents($url);
-                $json = json_decode($content,true);
-                $judul = html_entity_decode($json['judul']);
-                $no = 1;
-                $nono = 0;
-                
-                    $balas = array(
-                        'replyToken' => $replyToken,
-                        'messages' => array(
-                            array(
-                                'type' => 'template', // 訊息類型 (模板)
-                                'altText' => 'Example buttons template', // 替代文字
-                                'template' => array(
-                                    'type' => 'carousel', // 類型 (旋轉木馬)
-                                    'columns' => array()
-                                )
-                            )
-                        )
-                    );
-
-
-                            while($no <= 3){ 
-                                $kode = $json['detail'][$no]['kode'];
-                                $nama = $json['detail'][$no]['nama'];
-                                $harga = $json['detail'][$no]['harga'];
-                                $status = $json['detail'][$no]['status'];
-                                $list123 = array(
-                                                    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-                                                    'title' => $judul, // 標題 1 <不一定需要>
-                                                    'text' => $nama, // 文字 1
-                                                    'actions' => array(
-                                                        array(
-                                                            'type' => 'postback', // 類型 (回傳)
-                                                            'label' => $kode, // 標籤 1
-                                                            'data' => '/mulai-android-1' // 資料
-                                                        ),
-                                                        array(
-                                                            'type' => 'postback', // 類型 (回傳)
-                                                            'label' => $harga, // 標籤 1
-                                                            'data' => '/mulai-android-1' // 資料
-                                                        ),
-                                                        array(
-                                                            'type' => 'postback', // 類型 (回傳)
-                                                            'label' => $status, // 標籤 1
-                                                            'data' => '/mulai-android-1' // 資料
-                                                        )
-                                                    )
-                                                );
-                                $balas['messages']['template']['columns'][$nono] = $list123;
-                                $no++;
-                                $nono++;
-                        }
-	    
+				$content = file_get_contents($url);
+				$json = json_decode($content,true);
+				$judul = html_entity_decode($json['judul']);
+					
+				$no = 1;
+				while($no <= count($json['detail'])){ 
+					$kode = $json['detail'][$no]['kode'];
+					$nama = $json['detail'][$no]['nama'];
+					$harga = $json['detail'][$no]['harga'];
+					$status = $json['detail'][$no]['status'];
+				   	
+				   	$balas = array(
+				   	    'replyToken' => $replyToken,
+				   	    'messages' => array(
+				   	        array(
+				   	            'type' => 'template', // 訊息類型 (模板)
+				   	            'altText' => 'Example buttons template', // 替代文字
+				   	            'template' => array(
+				   	                'type' => 'carousel', // 類型 (旋轉木馬)
+				   	                'columns' => array(
+				   	                    array(
+				   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+				   	                        'title' => $judul, // 標題 1 <不一定需要>
+				   	                        'text' => $nama, // 文字 1
+				   	                        'actions' => array(
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => $kode, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            ),
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => $harga, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            ),
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => $status, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            )
+				   	                        )
+				   	                    ),
+				   	                    array(
+				   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+				   	                        'title' => $judul, // 標題 1 <不一定需要>
+				   	                        'text' => $nama, // 文字 1
+				   	                        'actions' => array(
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => $kode, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            ),
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => $harga, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            ),
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => $status, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            )
+				   	                        )
+				   	                    )
+				   	                )
+				   	            )
+				   	        )
+				   	    )
+				   	);
+								$no++;
+				}
+			    
 
 				}
 
