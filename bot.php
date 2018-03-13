@@ -747,7 +747,11 @@
 				$json = json_decode($content,true);
 				$judul = html_entity_decode($json['judul']);
 				$no = 1;
-				$balas = array(
+				$jumlahpesan = 1;
+				if(count($json['detail']) > 10){
+					$jumlah = count($json['detail'])/10;
+					while($jumlahpesan <= $jumlah){
+						$balas = array(
                         'replyToken' => $replyToken,
                         'messages' => array(
                             array(
@@ -805,6 +809,9 @@
 							   	array_push($balas['messages'][0]['template']['columns'], $bajing);
 							   $no++;
 						}
+					}
+
+				}
 	    
 
 				}
