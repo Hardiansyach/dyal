@@ -739,18 +739,17 @@
 
 				else if($pesan_datang=="test"){
 					$jumlahpesan = 1;
+					while($jumlahpesan <= 2){
 					$balas = array(
 						'replyToken' => $replyToken,
 						'messages' => array(
-
-						// while($jumlahpesan <= 2){
 							array(
 								'type' => 'text',
 								'text' => 're'					
 								)
-							//}
 						)
-					);		
+					);	
+					}	
 				}
 
 
