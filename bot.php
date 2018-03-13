@@ -738,18 +738,22 @@
 				}
 
 				else if($pesan_datang=="test"){
-					$jumlahpesan = 1;
-					while($jumlahpesan <= 2){
+					$no = 1;
 					$balas = array(
-						'replyToken' => $replyToken,
-						'messages' => array(
-							array(
-								'type' => 'text',
-								'text' => 're'					
-								)
-						)
-					);	
-					}	
+					        'replyToken' => $replyToken,
+					        'messages' => array(
+					    	)
+					                        
+						 );
+
+					while($no <= 2){ 
+					$bajing = array(
+						'type' => 'text',
+						'text' => 're'					
+						);
+					   	array_push($balas['messages'], $bajing);
+					   $no++;
+					}
 				}
 
 
