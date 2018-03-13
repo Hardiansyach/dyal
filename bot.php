@@ -743,12 +743,12 @@
 						'replyToken' => $replyToken,
 						'messages' => array(
 
-						while($jumlahpesan <= 2){
+						// while($jumlahpesan <= 2){
 							array(
 								'type' => 'text',
 								'text' => 're'					
 								)
-							}
+							//}
 						)
 					);		
 				}
