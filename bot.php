@@ -759,8 +759,8 @@
 			                    'columns' => array(
 			                        array(
 			                            'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Example Menu 1', // 標題 1 <不一定需要>
-			                            'text' => 'Description 1', // 文字 1
+			                            'title' => $judul, // 標題 1 <不一定需要>
+			                            'text' => $judul, // 文字 1
 			                            'actions' => array(
 			                                array(
 			                                    'type' => 'postback', // 類型 (回傳)
