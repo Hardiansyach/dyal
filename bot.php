@@ -750,6 +750,8 @@
 				$no = 1;
 				while($no <= count($json['detail'])){ 
 				   	$kode = $json['detail'][$no++]['kode'];
+				   	$harga = $json['detail'][$no++]['harga'];
+				   	$status = $json['detail'][$no++]['status'];
 				   	$balas = array(
 				   	    'replyToken' => $replyToken,
 				   	    'messages' => array(
@@ -762,7 +764,7 @@
 				   	                    array(
 				   	                        'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
 				   	                        'title' => $judul, // 標題 1 <不一定需要>
-				   	                        'text' => $judul, // 文字 1
+				   	                        'text' => $kode, // 文字 1
 				   	                        'actions' => array(
 				   	                            array(
 				   	                                'type' => 'postback', // 類型 (回傳)
@@ -771,12 +773,12 @@
 				   	                            ),
 				   	                            array(
 				   	                                'type' => 'postback', // 類型 (回傳)
-				   	                                'label' => 'postback 1', // 標籤 1
+				   	                                'label' => $harga, // 標籤 1
 				   	                                'data' => '/mulai-android-1' // 資料
 				   	                            ),
 				   	                            array(
 				   	                                'type' => 'postback', // 類型 (回傳)
-				   	                                'label' => 'postback 1', // 標籤 1
+				   	                                'label' => $status, // 標籤 1
 				   	                                'data' => '/mulai-android-1' // 資料
 				   	                            )
 				   	                        )
