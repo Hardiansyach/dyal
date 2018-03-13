@@ -737,6 +737,21 @@
 
 				}
 
+				else if($pesan_datang=="test"){
+					$jumlahpesan = 1;
+					$balas = array(
+						'replyToken' => $replyToken,
+						'messages' => array(
+
+						while($jumlahpesan <= 2){
+							array(
+								'type' => 'text',
+								'text' => 're'					
+								)
+							}
+						)
+					);		
+				}
 
 
 				else if($pesan_datang==$databc){
@@ -750,7 +765,7 @@
 				$jumlahpesan = 1;
 				if(count($json['detail']) > 10){
 					$jumlah = ceil(count($json['detail'])/10);
-					//while($jumlahpesan <= $jumlah){
+					while($jumlahpesan <= $jumlah){
 						$balas = array(
                         'replyToken' => $replyToken,
                         'messages' => array(
@@ -760,9 +775,6 @@
                                 'template' => array(
                                     'type' => 'carousel', // 類型 (旋轉木馬)
                                     'columns' =>  array()
-
-
-
 
                                     )
                                 )
@@ -809,7 +821,7 @@
 							   	array_push($balas['messages'][0]['template']['columns'], $bajing);
 							   $no++;
 						}
-					//}
+					}
 
 				}else{
 
