@@ -739,7 +739,6 @@
 				}
 
 				else if($pesan_datang=="test"){
-					$no = 1;
 					$balas = array(
 					        'replyToken' => $replyToken,
 					        'messages' => array(
@@ -771,6 +770,7 @@
 
 				if(count($json['detail']) > 6){
 					$nom = 1;
+					$no = 1;
 					$balas = array(
 					        'replyToken' => $replyToken,
 					        'messages' => array(
@@ -793,45 +793,44 @@
 					   	array_push($balas['messages'], $bajing);
 					   $nom++;
 					}
+					while($no <= count($json['detail'])){ 
+						$kode = $json['detail'][$no]['kode'];
+						$nama = $json['detail'][$no]['nama'];
+						$harga = $json['detail'][$no]['harga'];
+						$status = $json['detail'][$no]['status'];
 
-						while($no <= count($json['detail'])){ 
-							$kode = $json['detail'][$no]['kode'];
-							$nama = $json['detail'][$no]['nama'];
-							$harga = $json['detail'][$no]['harga'];
-							$status = $json['detail'][$no]['status'];
+						if($status == "open"){
+							$status = "Tersedia";
+						}
+						else{
+							$status = "Gangguan";
+						}
 
-							if($status == "open"){
-								$status = "Tersedia";
-							}
-							else{
-								$status = "Gangguan";
-							}
-
-							$bajing = 	array(
-					   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-					   	                        'title' => $judul, // 標題 1 <不一定需要>
-					   	                        'text' => $nama, // 文字 1
-					   	                        'actions' => array(
-					   	                            array(
-					   	                                'type' => 'postback', // 類型 (回傳)
-					   	                                'label' => "Kode : ".$kode, // 標籤 1
-					   	                                'data' => '/mulai-android-1' // 資料
-					   	                            ),
-					   	                            array(
-					   	                                'type' => 'postback', // 類型 (回傳)
-					   	                                'label' => "Harga : ".$harga, // 標籤 1
-					   	                                'data' => '/mulai-android-1' // 資料
-					   	                            ),
-					   	                            array(
-					   	                                'type' => 'postback', // 類型 (回傳)
-					   	                                'label' => "Status : ".$status, // 標籤 1
-					   	                                'data' => '/mulai-android-1' // 資料
-					   	                            )
-					   	                        )
-					   	                    );
-						   	array_push($balas['messages'][0]['template']['columns'], $bajing);
-						   $no++;
-					}
+						$bajing1 = 	array(
+				   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+				   	                        'title' => $judul, // 標題 1 <不一定需要>
+				   	                        'text' => $nama, // 文字 1
+				   	                        'actions' => array(
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => "Kode : ".$kode, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            ),
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => "Harga : ".$harga, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            ),
+				   	                            array(
+				   	                                'type' => 'postback', // 類型 (回傳)
+				   	                                'label' => "Status : ".$status, // 標籤 1
+				   	                                'data' => '/mulai-android-1' // 資料
+				   	                            )
+				   	                        )
+				   	                    );
+					   	array_push($balas['messages'][0]['template']['columns'], $bajing1);
+					   $no++;
+				}
 
 
 
