@@ -774,7 +774,12 @@
 					$balas = array(
 					        'replyToken' => $replyToken,
 					        'messages' => array(
-					        	array(
+					    	)
+					                        
+						 );
+
+					while($nom <= 2){ 
+					$bajing = array(
 	                                'type' => 'template', // 訊息類型 (模板)
 	                                'altText' => 'Harga '.$judul, // 替代文字
 	                                'template' => array(
@@ -785,26 +790,8 @@
 	                                )
 
 	                                    )
-	                                )	
-					    	)
-					                        
-						 );
-
-					while($nom <= 2){ 
-					$bajing =
-					    array(
-					        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-					        'title' => 'Xabber', // 標題 2 <不一定需要>
-					        'text' => 'Modul Video Xabber', // 文字 2
-					        'actions' => array(
-						        array(
-						            'type' => 'message', // 類型 (訊息)
-						            'label' => 'Kirim Video', // 標籤 2
-						            'text' => '/video-xabber' // 用戶發送文字
-						        )
-					        )
-					    );
-					  	array_push($balas['messages'][0]['template']['columns'], $bajing);	
+	                                );
+					   	array_push($balas['messages'], $bajing);
 					   $nom++;
 					}
 
