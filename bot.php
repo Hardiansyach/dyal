@@ -770,7 +770,6 @@
 
 
 				if(count($json['detail']) > 6){
-
 					$nom = 1;
 					$balas = array(
 					        'replyToken' => $replyToken,
@@ -779,7 +778,7 @@
 					                        
 						 );
 
-					while($no <= 2){ 
+					while($nom <= 2){ 
 					$bajing = array(
 						'type' => 'text',
 						'text' => 're'					
@@ -789,9 +788,6 @@
 					}
 
 				}
-
-
-
 
 				else{
 
