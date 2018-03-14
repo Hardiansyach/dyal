@@ -806,17 +806,17 @@
 						   	                        'actions' => array(
 						   	                            array(
 						   	                                'type' => 'postback', // 類型 (回傳)
-						   	                                'label' => "Kode:".$kode, // 標籤 1
+						   	                                'label' => "Kode : ".$kode, // 標籤 1
 						   	                                'data' => '/mulai-android-1' // 資料
 						   	                            ),
 						   	                            array(
 						   	                                'type' => 'postback', // 類型 (回傳)
-						   	                                'label' => "Harga:".$harga, // 標籤 1
+						   	                                'label' => "Harga : ".$harga, // 標籤 1
 						   	                                'data' => '/mulai-android-1' // 資料
 						   	                            ),
 						   	                            array(
 						   	                                'type' => 'postback', // 類型 (回傳)
-						   	                                'label' => "Status:".$status, // 標籤 1
+						   	                                'label' => "Status : ".$status, // 標籤 1
 						   	                                'data' => '/mulai-android-1' // 資料
 						   	                            )
 						   	                        )
@@ -866,17 +866,17 @@
 							   	                        'actions' => array(
 							   	                            array(
 							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => "Kode:".$kode, // 標籤 1
+							   	                                'label' => "Kode : ".$kode, // 標籤 1
 							   	                                'data' => '/mulai-android-1' // 資料
 							   	                            ),
 							   	                            array(
 							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => "Harga:".$harga, // 標籤 1
+							   	                                'label' => "Harga : ".$harga, // 標籤 1
 							   	                                'data' => '/mulai-android-1' // 資料
 							   	                            ),
 							   	                            array(
 							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => "Status:".$status, // 標籤 1
+							   	                                'label' => "Status : ".$status, // 標籤 1
 							   	                                'data' => '/mulai-android-1' // 資料
 							   	                            )
 							   	                        )
