@@ -739,6 +739,7 @@
 				}
 
 				else if($pesan_datang=="test"){
+					$no = 1;
 					$balas = array(
 					        'replyToken' => $replyToken,
 					        'messages' => array(
@@ -766,72 +767,67 @@
 				$judul = html_entity_decode($json['judul']);
 				$no = 1;
 				$jumlahpesan = 1;
+				if(count($json['detail']) > 10){
+					//$jumlah = ceil(count($json['detail'])/10);
+					while($jumlahpesan <= 2){
+						$balas = array(
+                        'replyToken' => $replyToken,
+                        'messages' => array(
+                            array(
+                                'type' => 'template', // 訊息類型 (模板)
+                                'altText' => 'Harga '.$judul, // 替代文字
+                                'template' => array(
+                                    'type' => 'carousel', // 類型 (旋轉木馬)
+                                    'columns' =>  array()
+
+                                    )
+                                )
+                            )
+                        
+	                    );
 
 
-				if(count($json['detail']) > 6){
-					$nom = 1;
-					$nomb = 1;
-					$no = 1;
-					$balas = array(
-					        'replyToken' => $replyToken,
-					        'messages' => array(
-					    	)
-					                        
-						 );
+							while($no <= count($json['detail'])){ 
+								$kode = $json['detail'][$no]['kode'];
+								$nama = $json['detail'][$no]['nama'];
+								$harga = $json['detail'][$no]['harga'];
+								$status = $json['detail'][$no]['status'];
 
-					while($nom <= 2){ 
-					$bajing = array(
-	                                'type' => 'template', // 訊息類型 (模板)
-	                                'altText' => 'Harga '.$judul, // 替代文字
-	                                'template' => array(
-	                                'type' => 'carousel', // 類型 (旋轉木馬)
-	                                'columns' =>  array(
-	                                	    array(
-	                                	        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-	                                	        'title' => 'Xabber', // 標題 2 <不一定需要>
-	                                	        'text' => 'Modul Video Xabber', // 文字 2
-	                                	        'actions' => array(
-	                                		        array(
-	                                		            'type' => 'message', // 類型 (訊息)
-	                                		            'label' => 'Kirim Video', // 標籤 2
-	                                		            'text' => '/video-xabber' // 用戶發送文字
-	                                		        )
-	                                	      	  )
-	                                	    )
+								if($status == "open"){
+									$status = "Tersedia";
+								}
+								else{
+									$status = "Gangguan";
+								}
 
-	                                )
-
-	                                    )
-	                                );
-					   	array_push($balas['messages'], $bajing);
-					   $nom++;
+								$bajing = 	array(
+						   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+						   	                        'title' => $judul, // 標題 1 <不一定需要>
+						   	                        'text' => $nama, // 文字 1
+						   	                        'actions' => array(
+						   	                            array(
+						   	                                'type' => 'postback', // 類型 (回傳)
+						   	                                'label' => "Kode : ".$kode, // 標籤 1
+						   	                                'data' => '/mulai-android-1' // 資料
+						   	                            ),
+						   	                            array(
+						   	                                'type' => 'postback', // 類型 (回傳)
+						   	                                'label' => "Harga : ".$harga, // 標籤 1
+						   	                                'data' => '/mulai-android-1' // 資料
+						   	                            ),
+						   	                            array(
+						   	                                'type' => 'postback', // 類型 (回傳)
+						   	                                'label' => "Status : ".$status, // 標籤 1
+						   	                                'data' => '/mulai-android-1' // 資料
+						   	                            )
+						   	                        )
+						   	                    );
+							   	array_push($balas['messages'][0]['template']['columns'], $bajing);
+							   $no++;
+						}
 					}
 
-					// while($nomb<=2){
-					// 	$anu = 
-					// 	    array(
-					// 	        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-					// 	        'title' => 'Xabber', // 標題 2 <不一定需要>
-					// 	        'text' => 'Modul Video Xabber', // 文字 2
-					// 	        'actions' => array(
-					// 		        array(
-					// 		            'type' => 'message', // 類型 (訊息)
-					// 		            'label' => 'Kirim Video', // 標籤 2
-					// 		            'text' => '/video-xabber' // 用戶發送文字
-					// 		        )
-					// 	      	  )
-					// 	    );
-
-					// 	    array_push($balas['messages'][0]['template']['columns'],$anu);
-					// 	    $nomb++;
-					// }
-
-
-
-
-				}
-
-				else{
+				}else{
 
 					$no = 1;
 					$balas = array(
