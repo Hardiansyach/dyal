@@ -40,7 +40,7 @@
 					$data4 = explode(".", $userx);
 					$datac = "/ig:".$data[1]."";
 					$datab = "/wiki:".$data[1]."";
-					$databc = strtolower("h.".$data4[1]."");
+					$databc = strtolower("h:".$data4[1]."");
 
 				
 
@@ -738,47 +738,28 @@
 
 				}
 
-				else if($pesan_datang=="test"){
-					$no = 1;
-					$balas = array(
-					        'replyToken' => $replyToken,
-					        'messages' => array(
-					    	)
-					                        
-						 );
-
-					while($no <= 2){ 
-					$bajing = array(
-						'type' => 'text',
-						'text' => 're'					
-						);
-					   	array_push($balas['messages'], $bajing);
-					   $no++;
-					}
-				}
 
 
 				else if($pesan_datang==$databc){
 
 
-				$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."&up=200";
+				$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data4[1]."&up=200";
 				$content = file_get_contents($url);
 				$json = json_decode($content,true);
 				$judul = html_entity_decode($json['judul']);
 				$no = 1;
-				$jumlahpesan = 1;
-				if(count($json['detail']) > 10){
-					//$jumlah = ceil(count($json['detail'])/10);
-					while($jumlahpesan <= 2){
-						$balas = array(
+				$balas = array(
                         'replyToken' => $replyToken,
                         'messages' => array(
                             array(
                                 'type' => 'template', // 訊息類型 (模板)
-                                'altText' => 'Harga '.$judul, // 替代文字
+                                'altText' => 'Example buttons template', // 替代文字
                                 'template' => array(
                                     'type' => 'carousel', // 類型 (旋轉木馬)
                                     'columns' =>  array()
+
+
+
 
                                     )
                                 )
@@ -807,17 +788,17 @@
 						   	                        'actions' => array(
 						   	                            array(
 						   	                                'type' => 'postback', // 類型 (回傳)
-						   	                                'label' => "Kode : ".$kode, // 標籤 1
+						   	                                'label' => $kode, // 標籤 1
 						   	                                'data' => '/mulai-android-1' // 資料
 						   	                            ),
 						   	                            array(
 						   	                                'type' => 'postback', // 類型 (回傳)
-						   	                                'label' => "Harga : ".$harga, // 標籤 1
+						   	                                'label' => $harga, // 標籤 1
 						   	                                'data' => '/mulai-android-1' // 資料
 						   	                            ),
 						   	                            array(
 						   	                                'type' => 'postback', // 類型 (回傳)
-						   	                                'label' => "Status : ".$status, // 標籤 1
+						   	                                'label' => $status, // 標籤 1
 						   	                                'data' => '/mulai-android-1' // 資料
 						   	                            )
 						   	                        )
@@ -825,67 +806,6 @@
 							   	array_push($balas['messages'][0]['template']['columns'], $bajing);
 							   $no++;
 						}
-					}
-
-				}else{
-
-					$no = 1;
-					$balas = array(
-	                        'replyToken' => $replyToken,
-	                        'messages' => array(
-	                            array(
-	                                'type' => 'template', // 訊息類型 (模板)
-	                                'altText' => 'Harga '.$judul, // 替代文字
-	                                'template' => array(
-	                                    'type' => 'carousel', // 類型 (旋轉木馬)
-	                                    'columns' =>  array()
-
-	                                    )
-	                                )
-	                            )
-	                        
-		                    );
-
-
-								while($no <= count($json['detail'])){ 
-									$kode = $json['detail'][$no]['kode'];
-									$nama = $json['detail'][$no]['nama'];
-									$harga = $json['detail'][$no]['harga'];
-									$status = $json['detail'][$no]['status'];
-
-									if($status == "open"){
-										$status = "Tersedia";
-									}
-									else{
-										$status = "Gangguan";
-									}
-
-									$bajing = 	array(
-							   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-							   	                        'title' => $judul, // 標題 1 <不一定需要>
-							   	                        'text' => $nama, // 文字 1
-							   	                        'actions' => array(
-							   	                            array(
-							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => "Kode : ".$kode, // 標籤 1
-							   	                                'data' => '/mulai-android-1' // 資料
-							   	                            ),
-							   	                            array(
-							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => "Harga : ".$harga, // 標籤 1
-							   	                                'data' => '/mulai-android-1' // 資料
-							   	                            ),
-							   	                            array(
-							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => "Status : ".$status, // 標籤 1
-							   	                                'data' => '/mulai-android-1' // 資料
-							   	                            )
-							   	                        )
-							   	                    );
-								   	array_push($balas['messages'][0]['template']['columns'], $bajing);
-								   $no++;
-							}
-				}
 	    
 
 				}
