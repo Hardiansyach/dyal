@@ -37,9 +37,10 @@
 					$pesan_datang = strtolower($message['text']);
 					$userx = $message['text'];
 					$data = explode(":", $userx);
+					$data4 = explode(".", $userx);
 					$datac = "/ig:".$data[1]."";
 					$datab = "/wiki:".$data[1]."";
-					$databc = strtolower("h:".$data[1]."");
+					$databc = strtolower("h.".$data4[1]."");
 
 				
 
