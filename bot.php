@@ -834,7 +834,7 @@
 	                        'messages' => array(
 	                            array(
 	                                'type' => 'template', // 訊息類型 (模板)
-	                                'altText' => 'Example buttons template', // 替代文字
+	                                'altText' => 'Harga '.$judul, // 替代文字
 	                                'template' => array(
 	                                    'type' => 'carousel', // 類型 (旋轉木馬)
 	                                    'columns' =>  array()
@@ -866,17 +866,17 @@
 							   	                        'actions' => array(
 							   	                            array(
 							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => $kode, // 標籤 1
+							   	                                'label' => "Kode:".$kode, // 標籤 1
 							   	                                'data' => '/mulai-android-1' // 資料
 							   	                            ),
 							   	                            array(
 							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => $harga, // 標籤 1
+							   	                                'label' => "Harga:".$harga, // 標籤 1
 							   	                                'data' => '/mulai-android-1' // 資料
 							   	                            ),
 							   	                            array(
 							   	                                'type' => 'postback', // 類型 (回傳)
-							   	                                'label' => $status, // 標籤 1
+							   	                                'label' => "Status:".$status, // 標籤 1
 							   	                                'data' => '/mulai-android-1' // 資料
 							   	                            )
 							   	                        )
