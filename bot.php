@@ -780,9 +780,27 @@
 
 					while($nom <= 2){ 
 					$bajing = array(
-						'type' => 'text',
-						'text' => 're'					
-						);
+	                                'type' => 'template', // 訊息類型 (模板)
+	                                'altText' => 'Harga '.$judul, // 替代文字
+	                                'template' => array(
+	                                'type' => 'carousel', // 類型 (旋轉木馬)
+	                                'columns' =>  array(
+	                                	array(
+	                                	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+	                                	    'title' => 'Aplikasi Android', // 標題 1 <不一定需要>
+	                                	    'text' => 'Modul Video Aplikasi Android', // 文字 1
+	                                	    'actions' => array(
+	                                	        array(
+	                                	            'type' => 'message', // 類型 (訊息)
+	                                	            'label' => 'Kirim Video', // 標籤 2
+	                                	            'text' => '/video-android' // 用戶發送文字
+	                                	        )
+	                                	    )
+	                                	),
+	                                )
+
+	                                    )
+	                                );
 					   	array_push($balas['messages'], $bajing);
 					   $nom++;
 					}
