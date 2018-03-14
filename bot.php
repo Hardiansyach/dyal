@@ -770,6 +770,7 @@
 
 				if(count($json['detail']) > 6){
 					$nom = 1;
+					$nomb = 1;
 					$no = 1;
 					$balas = array(
 					        'replyToken' => $replyToken,
@@ -794,7 +795,7 @@
 					   $nom++;
 					}
 
-					while($nom<=2){
+					while($nomb<=2){
 						$anu = 
 						    array(
 						        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
@@ -810,6 +811,7 @@
 						    );
 
 						    array_push($balas['messages'][0]['template']['columns'],$anu);
+						    $nomb++;
 					}
 
 
