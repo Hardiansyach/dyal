@@ -443,9 +443,13 @@
 							"duration" => 14000
 						),
 						array(
-							"type" => "audio",
-							"originalContentUrl" => "https://instaud.io/_/1R2s.mp3",
-							"duration" => 14000
+							"type" => "text",
+							"text" => "Disini saya akan memberi penjelasan singkat.\n
+\n
+1.itu ada menu untuk Daftarkan Agen,Transfer Saldo ke Downline, Kunci Aplikasi,Mengunjung Web Report
+\n
+2. "
+
 						),
 
 						array(
