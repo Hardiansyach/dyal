@@ -358,8 +358,8 @@
 			        		),
 						array(
 							"type" => "audio",
-							"originalContentUrl" => "https://drive.google.com/file/d/1r5uEA2ymt3A4vOF3MwT5z6FYXiRfyFVN/view?usp=sharing",
-							"duration" => 14000
+							"originalContentUrl" => "https://docs.google.com/a/wlavikings.org/file/d/1r5uEA2ymt3A4vOF3MwT5z6FYXiRfyFVN/preview",
+							"duration" => 15000
 						),
 						array(
 			        		   'type' => 'template',	
