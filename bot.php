@@ -180,6 +180,51 @@
 					// 	}
 
 
+
+					else if($pesan_datang=='/penipuan'){
+					    $balas = array(
+					        'replyToken' => $replyToken,
+					        'messages' => array(
+					            array(
+					                'type' => 'template', // 訊息類型 (模板)
+					                'altText' => 'Handphone Android', // 替代文字
+					                'template' => array(
+					                    'type' => 'carousel', // 類型 (旋轉木馬)
+					                    'columns' => array(
+					                        array(
+					                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+					                            'title' => 'Penipuan Transfer', // 標題 1 <不一定需要>
+					                            'text' => 'Hati Hati Dengan Bukti TF Palsu', // 文字 1
+					                            'actions' => array(
+					                                array(
+					                                    'type' => 'message', // 類型 (連結)
+					                                    'label' => 'Lihat Selengkapnya', // 標籤 3
+					                                    'text' => '/penipuan-online' // 連結網址
+					                                ),
+					                            )
+					                        ),
+					                        array(
+					                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+					                            'title' => 'Penipuan CS Propana', // 標題 2 <不一定需要>
+					                            'text' => 'Hati Hati denga CS Gadungan', // 文字 2
+					                            'actions' => array(
+					                                array(
+					                                    'type' => 'message', // 類型 (連結)
+					                                    'label' => 'Lihat Selengkapnya', // 標籤 3
+					                                    'text' => '/penipuan-cs' // 連結網址
+					                                ),
+					                            )
+					                        ),
+
+					                    )
+					                )
+					            )
+					        )
+					    );
+
+						}
+
+
 					else if($pesan_datang=='/modul'){
 						    $balas = array(
 						        'replyToken' => $replyToken,
@@ -862,65 +907,7 @@
 
 					}
 
-					else if($pesan_datang=='/penipuan'){
-						$balas = array(
-					        'replyToken' => $replyToken,
-					        'messages' => array(
-					     //    	array(
-										// 'type' => 'image',
-										// 'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
-										// 'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
-										// ),
-					        	 array(
-					        		   'type' => 'template',	
-					        		   'altText' => 'Download Aplikasi',
-					        		   'template' =>[
-					        		   		'type' => 'buttons',	
-					        		   		'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
-					        				'title' => 'Download Aplikasi',
-					        				'text' => 'Propana Reload',
-					        				'actions' => [
-					        					[
-					        			    		'type' => 'uri',
-					        			    		'label' => 'Aplikasi Propana',
-					        			    		'uri' => 'http://bit.ly/2F01wyE'
-					        					]
-					        				]
-					        			]
-					        		),
-								// array(
-								// 	"type" => "audio",
-								// 	"originalContentUrl" => "https://docs.google.com/a/wlavikings.org/file/d/1r5uEA2ymt3A4vOF3MwT5z6FYXiRfyFVN/preview",
-								// 	"duration" => 15000
-								// ),
-								// 
-								array(
-									"type" => "text",
-									"text" => "Bagi Pengguna Android,silahkan downlaod aplikasi di link Download yang sudah disediakan. Setelah itu masuk ke Aplikasi dan masukan Kode Agen dan No Telp Yang Terdaftar."
 
-								),
-								array(
-					        		   'type' => 'template',	
-					        		   'altText' => 'Lanjutkan Modul',
-					        		   'template' =>[
-					        		   		'type' => 'buttons',	
-					        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
-					        				'title' => 'Lanjutkan Modul',
-					        				'text' => 'Pilih Lanjutkan',
-					        				'actions' => [
-					        					[
-					        			    		'type' => 'message',
-					        			    		'label' => 'Lanjutkan',
-					        			    		'text' => '/mulai-android-2'
-					        					]
-					        				]
-					        			]
-					        		),
-
-
-					           )
-					    );
-					}
 
 
 				else if($pesan_datang=='/modul-video'){
