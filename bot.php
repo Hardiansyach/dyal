@@ -553,7 +553,7 @@
 				                    	        array(
 				                    	            'type' => 'message', // 類型 (訊息)
 				                    	            'label' => 'Syarat & Ketentuan', // 標籤 2
-				                    	            'text' => 'syarat-kententuan-deposit-alfamart' // 用戶發送文字
+				                    	            'text' => 'syarat-kententuan-deposit-alfa' // 用戶發送文字
 				                    	        )
 				                    	    )
 				                    	),
