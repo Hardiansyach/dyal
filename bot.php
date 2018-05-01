@@ -557,7 +557,7 @@
 				                    	        ),
 				                    	        array(
 				                    	            'type' => 'text', // 類型 (訊息)
-				                    	            'label' => 'Upgrade Account OVO', // 標籤 2
+				                    	            'label' => 'Upgrade OVO', // 標籤 2
 				                    	            'text' => 'upgrade-ovo' // 用戶發送文字
 				                    	        )
 				                    	    )
