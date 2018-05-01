@@ -400,9 +400,9 @@
 								'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo3.jpg"				
 								),
 						array(
-							"type" => "audio",
-							"originalContentUrl" => "https://instaud.io/_/1R2q.mp3",
-							"duration" => 14000
+							"type" => "text",
+							"text" => "Setelah itu akan muncul kata kata 'Saya ingin mendaftarkan HP saya...'(seperti gambar diatas) lalu Copy kata kata tersebut dan pastekan ke sms lalu kirim ke salah satu Nomor Center"
+
 						),
 						array(
 			        		   'type' => 'template',	
