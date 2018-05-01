@@ -128,24 +128,17 @@
 							}
 
 
-					else if($pesan_datang==$databccccce){
-						$url = "https://api-propana.herokuapp.com/clone.php?kode=".$data[1]."";
-						$content = file_get_contents($url);
-						$json = json_decode($content,true);
-						$judul = $json['judul'];
-						
-						$text1 = html_entity_decode($judul);
-
-
+					else if($pesan_datang=='test'){
 						$balas = array(
-							'replyToken' => $replyToken,
-							'messages' => array(
-							array(
-								'type' => 'text',
-								'text' => $text1					
-								)
-							)
-						);				
+								'replyToken' => $replyToken,														
+								'messages' => 
+											array(
+												array(
+													'type' => 'text',					
+													'text' => $replyToken
+														)
+												)
+									);			
 					}
 
 
