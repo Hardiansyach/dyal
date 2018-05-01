@@ -356,10 +356,16 @@
 			        				]
 			        			]
 			        		),
+						// array(
+						// 	"type" => "audio",
+						// 	"originalContentUrl" => "https://docs.google.com/a/wlavikings.org/file/d/1r5uEA2ymt3A4vOF3MwT5z6FYXiRfyFVN/preview",
+						// 	"duration" => 15000
+						// ),
+						// 
 						array(
-							"type" => "audio",
-							"originalContentUrl" => "https://docs.google.com/a/wlavikings.org/file/d/1r5uEA2ymt3A4vOF3MwT5z6FYXiRfyFVN/preview",
-							"duration" => 15000
+							"type" => "text",
+							"text" => "juancok"
+
 						),
 						array(
 			        		   'type' => 'template',	
