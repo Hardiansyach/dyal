@@ -552,6 +552,18 @@
 				                    	        ),
 				                    	        array(
 				                    	            'type' => 'message', // 類型 (訊息)
+				                    	            'label' => 'Syarat & Ketentuan', // 標籤 2
+				                    	            'text' => 'syarat-kententuan-deposit-alfamart' // 用戶發送文字
+				                    	        )
+				                    	    )
+				                    	),
+				                       array(
+				                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+				                    	    'title' => 'Tutorial', // 標題 1 <不一定需要>
+				                    	    'text' => 'Pilihan Menu', // 文字 1
+				                    	    'actions' => array(
+				                    	        array(
+				                    	            'type' => 'message', // 類型 (訊息)
 				                    	            'label' => 'Pendaftaran OVO', // 標籤 2
 				                    	            'text' => 'pendaftaran-ovo' // 用戶發送文字
 				                    	        ),
@@ -562,28 +574,6 @@
 				                    	        )
 				                    	    )
 				                    	),
-				                        // array(
-				                        //     'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-				                        //     'title' => 'Pengaturan', // 標題 1 <不一定需要>
-				                        //     'text' => 'Pilihan Menu', // 文字 1
-				                        //     'actions' => array(
-				                        //         array(
-				                        //             'type' => 'uri', // 類型 (訊息)
-				                        //             'label' => 'Nomor Center', // 標籤 2
-				                        //             'uri' => 'http://dyalbalistore.blogspot.co.id/p/nomor-center.html' // 用戶發送文字
-				                        //         ),
-				                    	   //      array(
-				                    	   //          'type' => 'uri', // 類型 (訊息)
-				                    	   //          'label' => 'Format Transaksi', // 標籤 2
-				                    	   //          'uri' => 'http://dyalbalistore.blogspot.co.id/p/format-transaksi.html' // 用戶發送文字
-				                        //         ),
-				                        //         array(
-				                        //             'type' => 'uri', // 類型 (訊息)
-				                        //             'label' => 'Komplain Transaksi', // 標籤 2
-				                        //             'uri' => 'https://t.me/propanareload_cs' // 用戶發送文字
-				                        //         )
-				                        //     )
-				                        // ),
 				                        // array(
 				                        //     'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
 				                        //     'title' => 'Pengaturan', // 標題 2 <不一定需要>
