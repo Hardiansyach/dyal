@@ -438,11 +438,6 @@
 									'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
 									),
 							array(
-								"type" => "audio",
-								"originalContentUrl" => "https://instaud.io/_/1R2r.mp3",
-								"duration" => 14000
-							),
-							array(
 								"type" => "text",
 								"text" => "Disini saya akan memberi penjelasan singkat.\n
 	1.itu ada menu untuk Daftarkan Agen,Transfer Saldo ke Downline, Kunci Aplikasi,Mengunjung Web Report
