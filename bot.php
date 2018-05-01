@@ -823,7 +823,7 @@
 				                    	        array(
 				                    	            'type' => 'message', // 類型 (訊息)
 				                    	            'label' => 'Hati-Hati Penipuan', // 標籤 2
-				                    	            'text' => '/penipuan-online' // 用戶發送文字
+				                    	            'text' => '/penipuan' // 用戶發送文字
 				                    	        ),
 				                                array(
 				                                    'type' => 'uri', // 類型 (連結)
@@ -862,6 +862,65 @@
 
 					}
 
+					else if($pesan_datang=='/penipuan'){
+						$balas = array(
+					        'replyToken' => $replyToken,
+					        'messages' => array(
+					     //    	array(
+										// 'type' => 'image',
+										// 'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
+										// 'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
+										// ),
+					        	 array(
+					        		   'type' => 'template',	
+					        		   'altText' => 'Download Aplikasi',
+					        		   'template' =>[
+					        		   		'type' => 'buttons',	
+					        		   		'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+					        				'title' => 'Download Aplikasi',
+					        				'text' => 'Propana Reload',
+					        				'actions' => [
+					        					[
+					        			    		'type' => 'uri',
+					        			    		'label' => 'Aplikasi Propana',
+					        			    		'uri' => 'http://bit.ly/2F01wyE'
+					        					]
+					        				]
+					        			]
+					        		),
+								// array(
+								// 	"type" => "audio",
+								// 	"originalContentUrl" => "https://docs.google.com/a/wlavikings.org/file/d/1r5uEA2ymt3A4vOF3MwT5z6FYXiRfyFVN/preview",
+								// 	"duration" => 15000
+								// ),
+								// 
+								array(
+									"type" => "text",
+									"text" => "Bagi Pengguna Android,silahkan downlaod aplikasi di link Download yang sudah disediakan. Setelah itu masuk ke Aplikasi dan masukan Kode Agen dan No Telp Yang Terdaftar."
+
+								),
+								array(
+					        		   'type' => 'template',	
+					        		   'altText' => 'Lanjutkan Modul',
+					        		   'template' =>[
+					        		   		'type' => 'buttons',	
+					        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+					        				'title' => 'Lanjutkan Modul',
+					        				'text' => 'Pilih Lanjutkan',
+					        				'actions' => [
+					        					[
+					        			    		'type' => 'message',
+					        			    		'label' => 'Lanjutkan',
+					        			    		'text' => '/mulai-android-2'
+					        					]
+					        				]
+					        			]
+					        		),
+
+
+					           )
+					    );
+					}
 
 
 				else if($pesan_datang=='/modul-video'){
