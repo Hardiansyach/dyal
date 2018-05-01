@@ -445,11 +445,12 @@
 						array(
 							"type" => "text",
 							"text" => "Disini saya akan memberi penjelasan singkat.\n
-\n
 1.itu ada menu untuk Daftarkan Agen,Transfer Saldo ke Downline, Kunci Aplikasi,Mengunjung Web Report
 \n
-2. "
-
+2. Untuk melakukan Transaksi seperti isi pulsa,kuota,voucher game,PLN, dll
+\n
+3. Menu Cetak Struk\n
+4. Menu News berguna untuk mengetahui info  baru dari Propana Reload"
 						),
 
 						array(
