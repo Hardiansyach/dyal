@@ -548,7 +548,7 @@
 				                    	        array(
 				                    	            'type' => 'message', // 類型 (訊息)
 				                    	            'label' => 'Deposit Alfamart', // 標籤 2
-				                    	            'text' => 'depost-alfamart' // 用戶發送文字
+				                    	            'text' => 'deposit-alfamart' // 用戶發送文字
 				                    	        ),
 				                    	        array(
 				                    	            'type' => 'message', // 類型 (訊息)
