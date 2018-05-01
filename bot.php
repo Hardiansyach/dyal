@@ -148,38 +148,6 @@
 					);				
 				}
 
-				else if($pesan_datang==$datac){
-					$api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
-					$jss = json_decode($api_ig);
-					$profile_pic_url_hd = $jss->user->profile_pic_url_hd;
-
-					$text1 = 
-					"Profil Instagram ".$data[1]."
-					Username : ".$data[1]."
-					Followers : ".$jss->user->followed_by->count."
-					Following : ".$jss->user->follows->count."
-					Post : ".$jss->user->media->count."
-					Bio : ".$jss->user->biography."
-					Website : ".$jss->user->external_url."
-					Verified : ".$jss->user->is_verified."";
-
-
-					$balas = array(
-						'replyToken' => $replyToken,
-						'messages' => array(
-						array(
-							'type' => 'text',
-							'text' => $text1					
-							),
-						array(
-							'type' => 'image',
-							'originalContentUrl' => $profile_pic_url_hd,
-							'previewImageUrl' => $profile_pic_url_hd, 					
-							)
-						)
-					);				
-				}
-
 
 				else if($pesan_datang=='/modul'){
 					$balas = array(
@@ -562,6 +530,48 @@
 
 				}
 
+			else if($pesan_datang=='deposit-alfamart'){
+			    $balas = array(
+			        'replyToken' => $replyToken,
+			        'messages' => array(
+			            array(
+			                'type' => 'template', // 訊息類型 (模板)
+			                'altText' => 'Handphone Android', // 替代文字
+			                'template' => array(
+			                    'type' => 'carousel', // 類型 (旋轉木馬)
+			                    'columns' => array(
+			                        array(
+			                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+			                            'title' => 'Aplikasi', // 標題 1 <不一定需要>
+			                            'text' => 'Download Aplikasi Propana Reload', // 文字 1
+			                            'actions' => array(
+			                                array(
+			                                    'type' => 'uri', // 類型 (連結)
+			                                    'label' => 'Download Aplikasi', // 標籤 3
+			                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
+			                                ),
+			                            )
+			                        ),
+			                        array(
+			                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+			                            'title' => 'Modul', // 標題 2 <不一定需要>
+			                            'text' => 'Belajar Memulai Aplikasi Android', // 文字 2
+			                            'actions' => array(
+			                                array(
+			                                    'type' => 'message', // 類型 (連結)
+			                                    'label' => 'Mulai Belajar', // 標籤 3
+			                                    'text' => '/mulai-android-1' // 連結網址
+			                                ),
+			                            )
+			                        ),
+
+			                    )
+			                )
+			            )
+			        )
+			    );
+
+				}
 
 
 			else if($pesan_datang=='menu'){
@@ -738,24 +748,24 @@
 
 				}
 
-				else if($pesan_datang=="test"){
-					$no = 1;
-					$balas = array(
-					        'replyToken' => $replyToken,
-					        'messages' => array(
-					    	)
+				// else if($pesan_datang=="test"){
+				// 	$no = 1;
+				// 	$balas = array(
+				// 	        'replyToken' => $replyToken,
+				// 	        'messages' => array(
+				// 	    	)
 					                        
-						 );
+				// 		 );
 
-					while($no <= 2){ 
-					$bajing = array(
-						'type' => 'text',
-						'text' => 're'					
-						);
-					   	array_push($balas['messages'], $bajing);
-					   $no++;
-					}
-				}
+				// 	while($no <= 2){ 
+				// 	$bajing = array(
+				// 		'type' => 'text',
+				// 		'text' => 're'					
+				// 		);
+				// 	   	array_push($balas['messages'], $bajing);
+				// 	   $no++;
+				// 	}
+				// }
 
 
 				else if($pesan_datang==$databc){
