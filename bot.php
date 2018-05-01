@@ -364,7 +364,7 @@
 						// 
 						array(
 							"type" => "text",
-							"text" => "juancok"
+							"text" => "Bagi Pengguna Android,silahkan downlaod aplikasi di link Download yang sudah disediakan. Setelah itu masuk ke Aplikasi dan masukan Kode Agen dan No Telp Yang Terdaftar."
 
 						),
 						array(
