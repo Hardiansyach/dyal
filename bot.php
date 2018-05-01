@@ -281,6 +281,55 @@
 
 						}
 
+
+
+
+//////////////////////ANDROID
+
+			else if($pesan_datang=='android'){
+			    $balas = array(
+			        'replyToken' => $replyToken,
+			        'messages' => array(
+			            array(
+			                'type' => 'template', // 訊息類型 (模板)
+			                'altText' => 'Handphone Android', // 替代文字
+			                'template' => array(
+			                    'type' => 'carousel', // 類型 (旋轉木馬)
+			                    'columns' => array(
+			                        array(
+			                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+			                            'title' => 'Aplikasi', // 標題 1 <不一定需要>
+			                            'text' => 'Download Aplikasi Propana Reload', // 文字 1
+			                            'actions' => array(
+			                                array(
+			                                    'type' => 'uri', // 類型 (連結)
+			                                    'label' => 'Download Aplikasi', // 標籤 3
+			                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
+			                                ),
+			                            )
+			                        ),
+			                        array(
+			                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+			                            'title' => 'Modul', // 標題 2 <不一定需要>
+			                            'text' => 'Belajar Memulai Aplikasi Android', // 文字 2
+			                            'actions' => array(
+			                                array(
+			                                    'type' => 'message', // 類型 (連結)
+			                                    'label' => 'Mulai Belajar', // 標籤 3
+			                                    'text' => '/mulai-android-1' // 連結網址
+			                                ),
+			                            )
+			                        ),
+
+			                    )
+			                )
+			            )
+			        )
+			    );
+
+				}
+
+
 			else if($pesan_datang=='/mulai-android-1'){
 				$balas = array(
 			        'replyToken' => $replyToken,
@@ -309,7 +358,7 @@
 			        		),
 						array(
 							"type" => "audio",
-							"originalContentUrl" => "https://instaud.io/_/1R2o.mp3",
+							"originalContentUrl" => "https://www.dropbox.com/s/y16xsj96cgr226e/1R2o.mp3",
 							"duration" => 14000
 						),
 						array(
@@ -415,37 +464,46 @@
 
 			}
 
-			else if($pesan_datang=='android'){
+//////////////////////ANDROID
+
+
+
+
+//////////////////////IPHONE
+
+
+
+				else if($pesan_datang=='iphone'){
 			    $balas = array(
 			        'replyToken' => $replyToken,
 			        'messages' => array(
 			            array(
 			                'type' => 'template', // 訊息類型 (模板)
-			                'altText' => 'Handphone Android', // 替代文字
+			                'altText' => 'Handphone iPhone', // 替代文字
 			                'template' => array(
 			                    'type' => 'carousel', // 類型 (旋轉木馬)
 			                    'columns' => array(
 			                        array(
 			                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
 			                            'title' => 'Aplikasi', // 標題 1 <不一定需要>
-			                            'text' => 'Download Aplikasi Propana Reload', // 文字 1
+			                            'text' => 'Download Aplikasi Telegram', // 文字 1
 			                            'actions' => array(
 			                                array(
 			                                    'type' => 'uri', // 類型 (連結)
 			                                    'label' => 'Download Aplikasi', // 標籤 3
-			                                    'uri' => 'http://bit.ly/2F01wyE' // 連結網址
+			                                    'uri' => 'https://goo.gl/UnXm8U' // 連結網址
 			                                ),
 			                            )
 			                        ),
 			                        array(
 			                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
 			                            'title' => 'Modul', // 標題 2 <不一定需要>
-			                            'text' => 'Belajar Memulai Aplikasi Android', // 文字 2
+			                            'text' => 'Belajar Memulai Aplikasi di iPhone', // 文字 2
 			                            'actions' => array(
 			                                array(
 			                                    'type' => 'message', // 類型 (連結)
 			                                    'label' => 'Mulai Belajar', // 標籤 3
-			                                    'text' => '/mulai-android-1' // 連結網址
+			                                    'text' => '/mulai-iphone-1' // 連結網址
 			                                ),
 			                            )
 			                        ),
@@ -457,7 +515,6 @@
 			    );
 
 				}
-
 
 
 			else if($pesan_datang=='/mulai-iphone-1'){
@@ -588,48 +645,8 @@
 
 			}
 
-				else if($pesan_datang=='iphone'){
-			    $balas = array(
-			        'replyToken' => $replyToken,
-			        'messages' => array(
-			            array(
-			                'type' => 'template', // 訊息類型 (模板)
-			                'altText' => 'Handphone iPhone', // 替代文字
-			                'template' => array(
-			                    'type' => 'carousel', // 類型 (旋轉木馬)
-			                    'columns' => array(
-			                        array(
-			                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Aplikasi', // 標題 1 <不一定需要>
-			                            'text' => 'Download Aplikasi Telegram', // 文字 1
-			                            'actions' => array(
-			                                array(
-			                                    'type' => 'uri', // 類型 (連結)
-			                                    'label' => 'Download Aplikasi', // 標籤 3
-			                                    'uri' => 'https://goo.gl/UnXm8U' // 連結網址
-			                                ),
-			                            )
-			                        ),
-			                        array(
-			                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
-			                            'title' => 'Modul', // 標題 2 <不一定需要>
-			                            'text' => 'Belajar Memulai Aplikasi di iPhone', // 文字 2
-			                            'actions' => array(
-			                                array(
-			                                    'type' => 'message', // 類型 (連結)
-			                                    'label' => 'Mulai Belajar', // 標籤 3
-			                                    'text' => '/mulai-iphone-1' // 連結網址
-			                                ),
-			                            )
-			                        ),
+//////////////////////IPHONE
 
-			                    )
-			                )
-			            )
-			        )
-			    );
-
-				}
 
 				else if($pesan_datang=='/tutorial'){
 				    $balas = array(
