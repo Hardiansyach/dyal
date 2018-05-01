@@ -149,36 +149,137 @@
 				}
 
 
-				else if($pesan_datang=='/modul'){
-					$balas = array(
-						'replyToken' => $replyToken,														
-						'messages' => array(
-							      	array(
-								'type' => 'template',	
-								'altText' => 'Pilih Handphone.',
-								'template' =>[
-									'type' => 'confirm',
-								'text' => 'Pilih Handphone Anda',
-								'actions' => 
-								[
-									[
-									'type' => 'message',
-									'label' => 'Android',														
-									'text' => 'Android' 
-									],
+				// else if($pesan_datang=='/modul'){
+				// 	$balas = array(
+				// 		'replyToken' => $replyToken,														
+				// 		'messages' => array(
+				// 			      	array(
+				// 				'type' => 'template',	
+				// 				'altText' => 'Pilih Handphone.',
+				// 				'template' =>[
+				// 					'type' => 'confirm',
+				// 				'text' => 'Pilih Handphone Anda',
+				// 				'actions' => 
+				// 				[
+				// 					[
+				// 					'type' => 'message',
+				// 					'label' => 'Android',														
+				// 					'text' => 'Android' 
+				// 					],
 										
-									[
-									'type' => 'message',
-									'label' => 'iPhone',
-									'text' => 'iPhone'
-									]	
-								]
-							]
-							  )
-							)
-						     );
-					}
+				// 					[
+				// 					'type' => 'message',
+				// 					'label' => 'iPhone',
+				// 					'text' => 'iPhone'
+				// 					]	
+				// 				]
+				// 			]
+				// 			  )
+				// 			)
+				// 		     );
+				// 	}
 
+
+				else if($pesan_datang=='/modul'){
+					    $balas = array(
+					        'replyToken' => $replyToken,
+					        'messages' => array(
+					            array(
+					                'type' => 'template', // 訊息類型 (模板)
+					                'altText' => 'Modul', // 替代文字
+					                'template' => array(
+					                    'type' => 'carousel', // 類型 (旋轉木馬)
+					                    'columns' => array(
+					                    	array(
+					                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+					                    	    'title' => 'Aplikasi', // 標題 1 <不一定需要>
+					                    	    'text' => 'Pilihan Menu', // 文字 1
+					                    	    'actions' => array(
+					                    	        array(
+					                    	            'type' => 'message', // 類型 (訊息)
+					                    	            'label' => 'Android', // 標籤 2
+					                    	            'text' => 'Android' // 用戶發送文字
+					                    	        ),
+					                    	        array(
+					                    	            'type' => 'message', // 類型 (訊息)
+					                    	            'label' => 'iPhone', // 標籤 2
+					                    	            'text' => 'iPhone' // 用戶發送文字
+					                    	        ),
+					                    	        array(
+					                    	            'type' => 'message', // 類型 (訊息)
+					                    	            'label' => 'Website', // 標籤 2
+					                    	            'text' => 'Website' // 用戶發送文字
+					                    	        )
+					                    	    )
+					                    	),
+					                     //   array(
+					                    	//     'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+					                    	//     'title' => 'Aplikasi', // 標題 1 <不一定需要>
+					                    	//     'text' => 'Pilihan Menu', // 文字 1
+					                    	//     'actions' => array(
+					                    	//         array(
+					                    	//             'type' => 'message', // 類型 (訊息)
+					                    	//             'label' => 'Pendaftaran OVO', // 標籤 2
+					                    	//             'text' => 'pendaftaran-ovo' // 用戶發送文字
+					                    	//         ),
+					                    	//         array(
+					                    	//             'type' => 'message', // 類型 (訊息)
+					                    	//             'label' => 'Upgrade OVO', // 標籤 2
+					                    	//             'text' => 'upgrade-ovo' // 用戶發送文字
+					                    	//         )
+					                    	//     )
+					                    	// ),
+					                        // array(
+					                        //     'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+					                        //     'title' => 'Pengaturan', // 標題 2 <不一定需要>
+					                        //     'text' => 'Pilihan Menu', // 文字 2
+					                        //     'actions' => array(
+					                    	   //      array(
+					                    	   //          'type' => 'uri', // 類型 (訊息)
+					                    	   //          'label' => 'Web Report', // 標籤 2
+					                    	   //          'uri' => 'http://bit.ly/2rmAIOR' // 用戶發送文字
+					                    	   //      ),
+					                    	   //      array(
+					                    	   //          'type' => 'message', // 類型 (訊息)
+					                    	   //          'label' => 'Hati-Hati Penipuan', // 標籤 2
+					                    	   //          'text' => '/penipuan-online' // 用戶發送文字
+					                    	   //      ),
+					                        //         array(
+					                        //             'type' => 'uri', // 類型 (連結)
+					                        //             'label' => 'Data Center', // 標籤 3
+					                        //             'uri' => 'http://dyalbalistore.blogspot.co.id/p/data-center.html' // 連結網址
+					                        //         )
+					                        //     )
+					                        // ),
+					                        // array(
+					                        //     'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+					                        //     'title' => 'Contact Admin', // 標題 2 <不一定需要>
+					                        //     'text' => 'Pilihan Menu', // 文字 2
+					                        //     'actions' => array(
+					                        //         array(
+					                        //             'type' => 'uri', // 類型 (連結)
+					                        //             'label' => 'Admin I', // 標籤 3
+					                        //             'uri' => 'https://line.me/ti/p/~dejody31' // 連結網址
+					                        //         ),
+					                        //         array(
+					                        //             'type' => 'uri', // 類型 (連結)
+					                        //             'label' => 'Admin II', // 標籤 3
+					                        //             'uri' => 'https://line.me/ti/p/~alroysh' // 連結網址
+					                        //         ),
+					                        //         array(
+					                        //             'type' => 'uri', // 類型 (連結)
+					                        //             'label' => 'Line Official', // 標籤 3
+					                        //             'uri' => 'https://line.me/ti/p/%40vds1946l' // 連結網址
+					                        //         )
+					                        //     )
+					                        // )
+					                    )
+					                )
+					            )
+					        )
+					    );
+
+						}
 
 			else if($pesan_datang=='/mulai-android-1'){
 				$balas = array(
