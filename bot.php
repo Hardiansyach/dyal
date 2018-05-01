@@ -206,7 +206,7 @@
 					                        array(
 					                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
 					                            'title' => 'Penipuan CS Propana', // 標題 2 <不一定需要>
-					                            'text' => 'Hati Hati denga CS Gadungan', // 文字 2
+					                            'text' => 'Hati Hati dengan CS Gadungan', // 文字 2
 					                            'actions' => array(
 					                                array(
 					                                    'type' => 'message', // 類型 (連結)
@@ -600,9 +600,9 @@
 				        			]
 				        		),
 							array(
-								"type" => "audio",
-								"originalContentUrl" => "https://instaud.io/_/1R6P.mp3",
-								"duration" => 14000
+								"type" => "text",
+								"text" => "Bagi Pengguna iPhone silahkan Download aplikasinya di link yan g sudah di sediakan lalu Daftarkan Nomor anda di Aplikasi tersebut."
+
 							),
 							array(
 				        		   'type' => 'template',	
@@ -637,9 +637,9 @@
 									'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo5.jpg"				
 									),
 							array(
-								"type" => "audio",
-								"originalContentUrl" => "https://instaud.io/_/1R6S.mp3",
-								"duration" => 14000
+								"type" => "text",
+								"text" => "Setelah melakukan registrasi Telegram , silahkan cari '@tembak_propanabot' dikolom pencarian untuk melakukan transaksi vai Telegram"
+
 							),
 							array(
 				        		   'type' => 'template',	
@@ -674,9 +674,9 @@
 									'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo6.jpg"				
 									),
 							array(
-								"type" => "audio",
-								"originalContentUrl" => "https://instaud.io/_/1R6T.mp3",
-								"duration" => 14000
+								"type" => "text",
+								"text" => "Setelah itu klik 'Start' pada telegram. Lalu kamu mendapatkan ID Telegrammu. Segera daftarkan ID Telegrammu agar bisa melakukan Transaksi. Daftarkan Id Telegrammu dengan cara SMS ID Telegrammu kirim ke Nomor Center"
+
 							),
 
 							array(
