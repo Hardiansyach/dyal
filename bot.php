@@ -536,29 +536,29 @@
 				        'messages' => array(
 				            array(
 				                'type' => 'template', // 訊息類型 (模板)
-				                'altText' => 'Pilihan Menu', // 替代文字
+				                'altText' => 'Tutorial', // 替代文字
 				                'template' => array(
 				                    'type' => 'carousel', // 類型 (旋轉木馬)
 				                    'columns' => array(
 				                    	array(
 				                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-				                    	    'title' => 'Pengaturan', // 標題 1 <不一定需要>
+				                    	    'title' => 'Tutorial', // 標題 1 <不一定需要>
 				                    	    'text' => 'Pilihan Menu', // 文字 1
 				                    	    'actions' => array(
 				                    	        array(
 				                    	            'type' => 'message', // 類型 (訊息)
-				                    	            'label' => 'Modul', // 標籤 2
-				                    	            'text' => '/modul' // 用戶發送文字
+				                    	            'label' => 'Deposit Alfamart', // 標籤 2
+				                    	            'text' => 'depost-alfamart' // 用戶發送文字
 				                    	        ),
 				                    	        array(
 				                    	            'type' => 'message', // 類型 (訊息)
-				                    	            'label' => 'Tutorial', // 標籤 2
-				                    	            'text' => '/tutorial' // 用戶發送文字
+				                    	            'label' => 'Pendaftaran OVO', // 標籤 2
+				                    	            'text' => 'pendaftaran-ovo' // 用戶發送文字
 				                    	        ),
 				                    	        array(
-				                    	            'type' => 'uri', // 類型 (訊息)
-				                    	            'label' => 'Info Promo', // 標籤 2
-				                    	            'uri' => 'https://t.me/propana_info' // 用戶發送文字
+				                    	            'type' => 'message', // 類型 (訊息)
+				                    	            'label' => 'Upgrade OVO', // 標籤 2
+				                    	            'text' => 'upgrade-ovo' // 用戶發送文字
 				                    	        )
 				                    	    )
 				                    	),
