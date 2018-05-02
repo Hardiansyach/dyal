@@ -128,20 +128,6 @@
 							}
 
 
-					else if($pesan_datang=='test'){
-						$balas = array(
-								'replyToken' => $replyToken,														
-								'messages' => 
-											array(
-												array(
-													'type' => 'text',					
-													'text' => $replyToken
-														)
-												)
-									);			
-					}
-
-
 					// else if($pesan_datang=='/modul'){
 					// 	$balas = array(
 					// 		'replyToken' => $replyToken,														
@@ -216,6 +202,71 @@
 					    );
 
 						}
+
+
+				else if($pesan_datang==$databc){
+
+
+				$url = "dyalbalistore.com/api/harga.php?no=".$data4[1]."";
+				$content = file_get_contents($url);
+				$json = json_decode($content,true);
+				$no = 1;
+				$jumlahpesan = 1;
+						$balas = array(
+                        'replyToken' => $replyToken,
+                        'messages' => array(
+                            array(
+                                'type' => 'template', // 訊息類型 (模板)
+                                'altText' => 'Harga '.$judul, // 替代文字
+                                'template' => array(
+                                    'type' => 'carousel', // 類型 (旋轉木馬)
+                                    'columns' =>  array()
+
+                                    )
+                                )
+                            )
+                        
+	                    );
+
+							while($no <= count($json)){ 
+								$kode = $json[$no]['id'];
+								$nama = $json[$no]['kode'];
+								$harga = $json[$no]['harga'];
+								$status = $json[$no]['status'];
+
+								if($status == "1"){
+									$status = "Tersedia";
+								}
+								else{
+									$status = "Gangguan";
+								}
+
+								$bajing = 	array(
+						   	                        'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+						   	                        'title' => $judul, // 標題 1 <不一定需要>
+						   	                        'text' => $nama, // 文字 1
+						   	                        'actions' => array(
+						   	                            array(
+						   	                                'type' => 'postback', // 類型 (回傳)
+						   	                                'label' => "Kode : ".$kode, // 標籤 1
+						   	                                'data' => '/mulai-android-1' // 資料
+						   	                            ),
+						   	                            array(
+						   	                                'type' => 'postback', // 類型 (回傳)
+						   	                                'label' => "Harga : ".$harga, // 標籤 1
+						   	                                'data' => '/mulai-android-1' // 資料
+						   	                            ),
+						   	                            array(
+						   	                                'type' => 'postback', // 類型 (回傳)
+						   	                                'label' => "Status : ".$status, // 標籤 1
+						   	                                'data' => '/mulai-android-1' // 資料
+						   	                            )
+						   	                        )
+						   	                    );
+							   	array_push($balas['messages'][0]['template']['columns'], $bajing);
+							   $no++;
+						}
+				}
 
 
 					else if($pesan_datang=='/modul'){
