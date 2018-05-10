@@ -642,6 +642,102 @@
 
 					}
 
+					else if($pesan_datang=='/mulai-website-1'){
+						$balas = array(
+					        'replyToken' => $replyToken,
+					        'messages' => array(
+					     //    	array(
+										// 'type' => 'image',
+										// 'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg",
+										// 'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo2.jpg"				
+										// ),
+					        	 array(
+					        		   'type' => 'template',	
+					        		   'altText' => 'Download Aplikasi',
+					        		   'template' =>[
+					        		   		'type' => 'buttons',	
+					        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+					        				'title' => 'Link Otoreport Propana Reload',
+					        				'text' => 'Otoreport Propana Reload',
+					        				'actions' => [
+					        					[
+					        			    		'type' => 'uri',
+					        			    		'label' => 'Menuju Link',
+					        			    		'uri' => 'http://propana.otoreport.com/'
+					        					]
+					        				]
+					        			]
+					        		),
+								// array(
+								// 	"type" => "audio",
+								// 	"originalContentUrl" => "https://docs.google.com/a/wlavikings.org/file/d/1r5uEA2ymt3A4vOF3MwT5z6FYXiRfyFVN/preview",
+								// 	"duration" => 15000
+								// ),
+								// 
+								array(
+									"type" => "text",
+									"text" => "Silahkan klik link diatas , lalu Pilih masuk dengan OTP\n\nMasukan No HP yang terdaftar di Propana Reload & PIN anda."
+
+								),
+								array(
+					        		   'type' => 'template',	
+					        		   'altText' => 'Lanjutkan Modul',
+					        		   'template' =>[
+					        		   		'type' => 'buttons',	
+					        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+					        				'title' => 'Lanjutkan Modul',
+					        				'text' => 'Pilih Lanjutkan',
+					        				'actions' => [
+					        					[
+					        			    		'type' => 'message',
+					        			    		'label' => 'Lanjutkan',
+					        			    		'text' => '/mulai-website-2'
+					        					]
+					        				]
+					        			]
+					        		),
+
+
+					           )
+					    );
+					}
+
+					else if($pesan_datang=='/mulai-website-2'){
+						$balas = array(
+					        'replyToken' => $replyToken,
+					        'messages' => array(
+					        	array(
+										'type' => 'image',
+										'originalContentUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo6314162109570721842.jpg",
+										'previewImageUrl' => "https://raw.githubusercontent.com/alroysh/dyal/master/image/photo6314162109570721842.jpg"				
+										),
+								array(
+									"type" => "text",
+									"text" => "Setelah itu klik 'Klik Kirim OTP ke Saya' , Tunggu beberapa saat akan ada SMS dari Center. lalu masukan kode OTP ke Website\n\nNB : Jangan memberi tahu siapa siapa OTPnya (Bersifat Rahasia)\n\nSukses menggunakan Web Report , silahkan Transaksi , Cek Kode Produk , Cek Status Transaksi dll"
+
+								),
+								array(
+				        		   'type' => 'template',	
+				        		   'altText' => 'Modul Selesai',
+				        		   'template' =>[
+				        		   		'type' => 'buttons',	
+				        		   		//'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/logo2.png',
+				        				'title' => 'Modul Selesai',
+				        				'text' => 'Modul Website telah selesai, silahkan mencoba 1 Transaksi',
+				        				'actions' => [
+				        					[
+				        			    		'type' => 'message',
+				        			    		'label' => 'Menu',
+				        			    		'text' => 'menu'
+				        					]
+				        				]
+				        			]
+				        		),
+
+					           )
+					    );
+
+					}
 
 
 	//////////////////////IPHONE
@@ -745,6 +841,9 @@
 				           )
 				    );
 				}
+
+
+
 
 				else if($pesan_datang=='/mulai-iphone-2'){
 					$balas = array(
