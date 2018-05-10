@@ -251,6 +251,19 @@
 						                            )
 						                        ),
 
+						                        array(
+						                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+						                            'title' => 'Tidak bisa masuk aplikasi?', // 標題 1 <不一定需要>
+						                            'text' => 'Kak kok sudah ada notifikasi berhasil , tapi gak bisa masuk Aplikasinya?', // 文字 1
+						                            'actions' => array(
+						                                array(
+						                                    'type' => 'message', // 類型 (連結)
+						                                    'label' => 'Lihat Selengkapnya', // 標籤 3
+						                                    'text' => '/gagal-masuk-aplikasi' // 連結網址
+						                                ),
+						                            )
+						                        ),
+
 						                    )
 						                )
 						            )
