@@ -264,7 +264,18 @@
 						                            )
 						                        ),
 
-						                       
+						                       array(
+						                        //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+						                           'title' => 'Batas Tiket Deposit', // 標題 1 <不一定需要>
+						                           'text' => 'Berapa lama Batas Tiket Deposit?', // 文字 1
+						                           'actions' => array(
+						                               array(
+						                                   'type' => 'message', // 類型 (連結)
+						                                   'label' => 'Lihat Selengkapnya', // 標籤 3
+						                                   'text' => '/batas-tiket-deposit' // 連結網址
+						                               ),
+						                           )
+						                       ),
 
 						                    )
 						                )
