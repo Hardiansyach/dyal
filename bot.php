@@ -780,111 +780,49 @@
 						}
 
 
-				else if($pesan_datang=='menu'){
-				    $balas = array(
-				        'replyToken' => $replyToken,
-				        'messages' => array(
-				            array(
-				                'type' => 'template', // 訊息類型 (模板)
-				                'altText' => 'Pilihan Menu', // 替代文字
-				                'template' => array(
-				                    'type' => 'carousel', // 類型 (旋轉木馬)
-				                    'columns' => array(
-				                    	array(
-				                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-				                    	    'title' => 'Pengaturan', // 標題 1 <不一定需要>
-				                    	    'text' => 'Pilihan Menu', // 文字 1
-				                    	    'actions' => array(
-				                    	        array(
-				                    	            'type' => 'message', // 類型 (訊息)
-				                    	            'label' => 'Modul', // 標籤 2
-				                    	            'text' => '/modul' // 用戶發送文字
-				                    	        ),
-				                    	        array(
-				                    	            'type' => 'message', // 類型 (訊息)
-				                    	            'label' => 'Tutorial', // 標籤 2
-				                    	            'text' => '/tutorial' // 用戶發送文字
-				                    	        ),
-				                    	        array(
-				                    	            'type' => 'uri', // 類型 (訊息)
-				                    	            'label' => 'Info Promo', // 標籤 2
-				                    	            'uri' => 'https://t.me/propana_info' // 用戶發送文字
-				                    	        )
-				                    	    )
-				                    	),
-				                        array(
-				                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-				                            'title' => 'Pengaturan', // 標題 1 <不一定需要>
-				                            'text' => 'Pilihan Menu', // 文字 1
-				                            'actions' => array(
-				                                array(
-				                                    'type' => 'uri', // 類型 (訊息)
-				                                    'label' => 'Nomor Center', // 標籤 2
-				                                    'uri' => 'http://dyalbalistore.blogspot.co.id/p/nomor-center.html' // 用戶發送文字
-				                                ),
-				                    	        array(
-				                    	            'type' => 'uri', // 類型 (訊息)
-				                    	            'label' => 'Format Transaksi', // 標籤 2
-				                    	            'uri' => 'http://dyalbalistore.blogspot.co.id/p/format-transaksi.html' // 用戶發送文字
-				                                ),
-				                                array(
-				                                    'type' => 'uri', // 類型 (訊息)
-				                                    'label' => 'Komplain Transaksi', // 標籤 2
-				                                    'uri' => 'https://t.me/propanareload_cs' // 用戶發送文字
-				                                )
-				                            )
-				                        ),
-				                        array(
-				                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-				                            'title' => 'Pengaturan', // 標題 2 <不一定需要>
-				                            'text' => 'Pilihan Menu', // 文字 2
-				                            'actions' => array(
-				                    	        array(
-				                    	            'type' => 'uri', // 類型 (訊息)
-				                    	            'label' => 'Web Report', // 標籤 2
-				                    	            'uri' => 'http://bit.ly/2rmAIOR' // 用戶發送文字
-				                    	        ),
-				                    	        array(
-				                    	            'type' => 'message', // 類型 (訊息)
-				                    	            'label' => 'Hati-Hati Penipuan', // 標籤 2
-				                    	            'text' => '/penipuan' // 用戶發送文字
-				                    	        ),
-				                                array(
-				                                    'type' => 'uri', // 類型 (連結)
-				                                    'label' => 'Data Center', // 標籤 3
-				                                    'uri' => 'http://dyalbalistore.blogspot.co.id/p/data-center.html' // 連結網址
-				                                )
-				                            )
-				                        ),
-				                        array(
-				                            'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-				                            'title' => 'Contact Admin', // 標題 2 <不一定需要>
-				                            'text' => 'Pilihan Menu', // 文字 2
-				                            'actions' => array(
-				                                array(
-				                                    'type' => 'uri', // 類型 (連結)
-				                                    'label' => 'Admin I', // 標籤 3
-				                                    'uri' => 'https://line.me/ti/p/~dejody31' // 連結網址
-				                                ),
-				                                array(
-				                                    'type' => 'uri', // 類型 (連結)
-				                                    'label' => 'Admin II', // 標籤 3
-				                                    'uri' => 'https://line.me/ti/p/~alroysh' // 連結網址
-				                                ),
-				                                array(
-				                                    'type' => 'uri', // 類型 (連結)
-				                                    'label' => 'Line Official', // 標籤 3
-				                                    'uri' => 'https://line.me/ti/p/%40vds1946l' // 連結網址
-				                                )
-				                            )
-				                        )
-				                    )
-				                )
-				            )
-				        )
-				    );
+						else if($pesan_datang=='/komplain-transaksi'){
+						    $balas = array(
+						        'replyToken' => $replyToken,
+						        'messages' => array(
+						            array(
+						                'type' => 'template', // 訊息類型 (模板)
+						                'altText' => 'Tutorial', // 替代文字
+						                'template' => array(
+						                    'type' => 'carousel', // 類型 (旋轉木馬)
+						                    'columns' => array(
+						                    	array(
+						                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+						                    	    'title' => 'Tutorial', // 標題 1 <不一定需要>
+						                    	    'text' => 'Klik Tombol dibawah', // 文字 1
+						                    	    'actions' => array(
+						                    	        array(
+						                    	           'type' => 'uri', // 類型 (訊息)
+						                    	           'label' => 'Customer Service I', // 標籤 2
+						                    	           'uri' => 'https://t.me/propanareload_cs' // 用戶發送文字
+						                    	        )
+						                    	    )
+						                    	),
+						                       array(
+						                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+						                    	    'title' => 'Customer Service', // 標題 1 <不一定需要>
+						                    	    'text' => 'Klik Tombol dibawah', // 文字 1
+						                    	    'actions' => array(
+						                    	        array(
+						                    	            'type' => 'uri', // 類型 (訊息)
+						                    	            'label' => 'Customer Service II', // 標籤 2
+						                    	            'uri' => 'https://t.me/cspropana' // 用戶發送文字
+						                    	        )
+						                    	    )
+						                    	),
+						                    )
+						                )
+						            )
+						        )
+						    );
 
-					}
+							}
+
+
 
 
 					else if($pesan_datang=='menu'){
