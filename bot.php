@@ -166,7 +166,7 @@
 					        'messages' => array(
 					            array(
 					                'type' => 'template', // 訊息類型 (模板)
-					                'altText' => 'Handphone Android', // 替代文字
+					                'altText' => 'Penipuan', // 替代文字
 					                'template' => array(
 					                    'type' => 'carousel', // 類型 (旋轉木馬)
 					                    'columns' => array(
@@ -202,6 +202,50 @@
 					    );
 
 						}
+
+
+						else if($pesan_datang=='/bantuan'){
+						    $balas = array(
+						        'replyToken' => $replyToken,
+						        'messages' => array(
+						            array(
+						                'type' => 'template', // 訊息類型 (模板)
+						                'altText' => 'Bantuan', // 替代文字
+						                'template' => array(
+						                    'type' => 'carousel', // 類型 (旋轉木馬)
+						                    'columns' => array(
+						                        array(
+						                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+						                            'title' => 'Penipuan Transfer', // 標題 1 <不一定需要>
+						                            'text' => 'Hati Hati Dengan Bukti TF Palsu', // 文字 1
+						                            'actions' => array(
+						                                array(
+						                                    'type' => 'message', // 類型 (連結)
+						                                    'label' => 'Lihat Selengkapnya', // 標籤 3
+						                                    'text' => '/penipuan-online' // 連結網址
+						                                ),
+						                            )
+						                        ),
+						                        array(
+						                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+						                            'title' => 'Penipuan CS Propana', // 標題 2 <不一定需要>
+						                            'text' => 'Hati Hati dengan CS Gadungan', // 文字 2
+						                            'actions' => array(
+						                                array(
+						                                    'type' => 'message', // 類型 (連結)
+						                                    'label' => 'Lihat Selengkapnya', // 標籤 3
+						                                    'text' => '/penipuan-cs' // 連結網址
+						                                ),
+						                            )
+						                        ),
+
+						                    )
+						                )
+						            )
+						        )
+						    );
+
+							}
 
 
 					else if($pesan_datang=='/modul'){
@@ -617,7 +661,7 @@
 									),
 							array(
 								"type" => "text",
-								"text" => "Setelah melakukan registrasi Telegram , silahkan cari '@tembak_propanabot' dikolom pencarian untuk melakukan transaksi vai Telegram"
+								"text" => "Setelah melakukan registrasi Telegram , silahkan cari '@tembak_propanabot' dikolom pencarian / klik t.me/tembak_propanabot untuk melakukan transaksi vai Telegram"
 
 							),
 							array(
