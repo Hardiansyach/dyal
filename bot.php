@@ -524,6 +524,37 @@
 								"text" => "Setelah itu akan muncul kata kata 'Saya ingin mendaftarkan HP saya...'(seperti gambar diatas) lalu Copy kata kata tersebut dan pastekan ke sms lalu kirim ke salah satu Nomor Center"
 
 							),
+
+							array(
+								"type" => "text",
+								"text" => "Axis\n
+								083840383979\n
+								083840380459
+								--------------------------\n\n
+
+								Indosat \n
+								08157555627 \n
+								081575535624\n
+								--------------------------\n\n
+
+								Three \n
+								089531528333 \n
+								089621388371\n
+								--------------------------\n\n
+
+								XL\n
+								08533731996\n
+								085933731997\n
+								--------------------------\n\n
+
+								Telkomsel\n 
+								081225639463\n
+								081395475491 \n
+								081395475493\n"
+
+							),
+
+
 							array(
 				        		   'type' => 'template',	
 				        		   'altText' => 'Lanjutkan Modul',
