@@ -599,6 +599,50 @@
 
 
 
+					else if($pesan_datang=='website'){
+				    $balas = array(
+				        'replyToken' => $replyToken,
+				        'messages' => array(
+				            array(
+				                'type' => 'template', // 訊息類型 (模板)
+				                'altText' => 'Website', // 替代文字
+				                'template' => array(
+				                    'type' => 'carousel', // 類型 (旋轉木馬)
+				                    'columns' => array(
+				                        array(
+				                         //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+				                            'title' => 'Aplikasi', // 標題 1 <不一定需要>
+				                            'text' => 'Link Otoreport Propana Reload', // 文字 1
+				                            'actions' => array(
+				                                array(
+				                                    'type' => 'uri', // 類型 (連結)
+				                                    'label' => 'Menuju Link', // 標籤 3
+				                                    'uri' => 'http://propana.otoreport.com/' // 連結網址
+				                                ),
+				                            )
+				                        ),
+				                        array(
+				                           // 'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+				                            'title' => 'Modul', // 標題 2 <不一定需要>
+				                            'text' => 'Belajar Memulai Aplikasi di Website', // 文字 2
+				                            'actions' => array(
+				                                array(
+				                                    'type' => 'message', // 類型 (連結)
+				                                    'label' => 'Mulai Belajar', // 標籤 3
+				                                    'text' => '/mulai-website-1' // 連結網址
+				                                ),
+				                            )
+				                        ),
+
+				                    )
+				                )
+				            )
+				        )
+				    );
+
+					}
+
+
 
 	//////////////////////IPHONE
 
