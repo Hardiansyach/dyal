@@ -1140,7 +1140,7 @@
 						                       	        array(
 						                       	            'type' => 'message', // 類型 (訊息)
 						                       	            'label' => 'Customer Service', // 標籤 2
-						                       	            'text' => 'Format: K.[isi komplain]\n\nContoh: K.mohon cek trx S10 ke no 08123456789 transaksi sukses tapi pulsa blm msk, thx' // 用戶發送文字
+						                       	            "text" => "Format: K.[isi komplain]\n\nContoh: K.mohon cek trx S10 ke no 08123456789 transaksi sukses tapi pulsa blm msk, thx" // 用戶發送文字
 						                       	        )
 						                       	    )
 						                       	),
