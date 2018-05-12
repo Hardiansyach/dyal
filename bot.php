@@ -1108,9 +1108,21 @@
 						                'template' => array(
 						                    'type' => 'carousel', // 類型 (旋轉木馬)
 						                    'columns' => array(
+						                       array(
+						                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+						                    	    'title' => 'Customer Service via Aplikasi', // 標題 1 <不一定需要>
+						                    	    'text' => 'Cara Komplain', // 文字 1
+						                    	    'actions' => array(
+						                    	        array(
+						                    	            'type' => 'message', // 類型 (訊息)
+						                    	            'label' => 'Customer Service', // 標籤 2
+						                    	            "text" => "Format: K.[isi komplain]\n\nContoh: K.mohon cek trx S10 ke no 08123456789 transaksi sukses tapi pulsa blm msk, thx" // 用戶發送文字
+						                    	        )
+						                    	    )
+						                    	),
 						                    	array(
 						                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-						                    	    'title' => 'Customer Service', // 標題 1 <不一定需要>
+						                    	    'title' => 'Customer Service via Telegram', // 標題 1 <不一定需要>
 						                    	    'text' => 'Klik Tombol dibawah', // 文字 1
 						                    	    'actions' => array(
 						                    	        array(
@@ -1122,7 +1134,7 @@
 						                    	),
 						                       array(
 						                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-						                    	    'title' => 'Customer Service', // 標題 1 <不一定需要>
+						                    	    'title' => 'Customer Service via Telegram', // 標題 1 <不一定需要>
 						                    	    'text' => 'Klik Tombol dibawah', // 文字 1
 						                    	    'actions' => array(
 						                    	        array(
@@ -1132,18 +1144,6 @@
 						                    	        )
 						                    	    )
 						                    	),
-						                          array(
-						                       	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-						                       	    'title' => 'Customer Service via Aplikasi', // 標題 1 <不一定需要>
-						                       	    'text' => 'Cara Komplain', // 文字 1
-						                       	    'actions' => array(
-						                       	        array(
-						                       	            'type' => 'message', // 類型 (訊息)
-						                       	            'label' => 'Customer Service', // 標籤 2
-						                       	            "text" => "Format: K.[isi komplain]\n\nContoh: K.mohon cek trx S10 ke no 08123456789 transaksi sukses tapi pulsa blm msk, thx" // 用戶發送文字
-						                       	        )
-						                       	    )
-						                       	),
 						                    )
 						                )
 						            )
