@@ -311,7 +311,7 @@
 						                               array(
 						                                   'type' => 'message', // 類型 (連結)
 						                                   'label' => 'Lihat Selengkapnya', // 標籤 3
-						                                   'text' => '						                       syarat-kententuan-deposit-alfa' // 連結網址
+						                                   'text' => 'syarat-kententuan-deposit-alfa' // 連結網址
 						                               ),
 						                           )
 						                       ),
@@ -964,14 +964,20 @@
 					                    	    'actions' => array(
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' => 'Deposit Alfamart', // 標籤 2
-					                    	            'text' => 'deposit-alfamart' // 用戶發送文字
+					                    	            'label' =>'Cara Mengisi Pulsa di Aplikasi', // 標籤 2
+					                    	            'text' => '/isi-pulsa' // 用戶發送文字
 					                    	        ),
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' =>'Tiket Deposit', // 標籤 2
+					                    	            'label' =>'Cara Mengisi Pulsa di Telegram', // 標籤 2
+					                    	            'text' => '/depo-apps' // 用戶發送文字
+					                    	        ),
+					                    	        array(
+					                    	            'type' => 'message', // 類型 (訊息)
+					                    	            'label' =>'Cara Mengambil Deposit', // 標籤 2
 					                    	            'text' => 'syarat-kentetuan-deposit-alfa' // 用戶發送文字
-					                    	        )
+					                    	        ),
+
 					                    	    )
 					                    	),
 					                       array(
@@ -979,6 +985,11 @@
 					                    	    'title' => 'Tutorial', // 標題 1 <不一定需要>
 					                    	    'text' => 'Pilihan Menu', // 文字 1
 					                    	    'actions' => array(
+					                    	    	array(
+					                    	    	    'type' => 'message', // 類型 (訊息)
+					                    	    	    'label' => 'Deposit Alfamart', // 標籤 2
+					                    	    	    'text' => 'deposit-alfamart' // 用戶發送文字
+					                    	    	),
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
 					                    	            'label' => 'Pendaftaran OVO', // 標籤 2
