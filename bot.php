@@ -303,6 +303,18 @@
 						                           )
 						                       ),
 
+						                       array(
+						                        //   'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
+						                           'title' => 'Syarat Dan Ketentuan Deposit di Alfamart', // 標題 1 <不一定需要>
+						                           'text' => 'Apa Syarat Dan Ketentuan Deposit di Alfamart', // 文字 1
+						                           'actions' => array(
+						                               array(
+						                                   'type' => 'message', // 類型 (連結)
+						                                   'label' => 'Lihat Selengkapnya', // 標籤 3
+						                                   'text' => '						                       syarat-kententuan-deposit-alfa' // 連結網址
+						                               ),
+						                           )
+						                       ),
 
 						                    )
 						                )
@@ -946,7 +958,7 @@
 					                    'type' => 'carousel', // 類型 (旋轉木馬)
 					                    'columns' => array(
 					                    	array(
-					                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+					                    	    //'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
 					                    	    'title' => 'Tutorial', // 標題 1 <不一定需要>
 					                    	    'text' => 'Pilihan Menu', // 文字 1
 					                    	    'actions' => array(
@@ -957,13 +969,13 @@
 					                    	        ),
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' => 'Syarat & Ketentuan', // 標籤 2
-					                    	            'text' => 'syarat-kententuan-deposit-alfa' // 用戶發送文字
+					                    	            'label' =>'Tiket Deposit', // 標籤 2
+					                    	            'text' => 'syarat-kentetuan-deposit-alfa' // 用戶發送文字
 					                    	        )
 					                    	    )
 					                    	),
 					                       array(
-					                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+					                    	    //'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
 					                    	    'title' => 'Tutorial', // 標題 1 <不一定需要>
 					                    	    'text' => 'Pilihan Menu', // 文字 1
 					                    	    'actions' => array(
