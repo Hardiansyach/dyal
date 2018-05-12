@@ -969,12 +969,12 @@
 					                    	        ),
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' =>'Isi Pulsa via Telegram', // 標籤 2
+					                    	            'label' =>'Ambil Deposit', // 標籤 2
 					                    	            'text' => '/depo-apps' // 用戶發送文字
 					                    	        ),
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' =>'Ambil Deposit via Aplikasi', // 標籤 2
+					                    	            'label' =>'Ambil Deposit', // 標籤 2
 					                    	            'text' => 'syarat-kentetuan-deposit-alfa' // 用戶發送文字
 					                    	        ),
 
