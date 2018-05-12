@@ -964,17 +964,17 @@
 					                    	    'actions' => array(
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' =>'Cara Mengisi Pulsa di Aplikasi', // 標籤 2
+					                    	            'label' =>'Isi Pulsa via Aplikasi', // 標籤 2
 					                    	            'text' => '/isi-pulsa' // 用戶發送文字
 					                    	        ),
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' =>'Cara Mengisi Pulsa di Telegram', // 標籤 2
+					                    	            'label' =>'Isi Pulsa via Telegram', // 標籤 2
 					                    	            'text' => '/depo-apps' // 用戶發送文字
 					                    	        ),
 					                    	        array(
 					                    	            'type' => 'message', // 類型 (訊息)
-					                    	            'label' =>'Cara Mengambil Deposit', // 標籤 2
+					                    	            'label' =>'Ambil Deposit via Aplikasi', // 標籤 2
 					                    	            'text' => 'syarat-kentetuan-deposit-alfa' // 用戶發送文字
 					                    	        ),
 
