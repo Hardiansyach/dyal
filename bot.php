@@ -1126,24 +1126,24 @@
 						                    	    'text' => 'Klik Tombol dibawah', // 文字 1
 						                    	    'actions' => array(
 						                    	        array(
-						                    	           'type' => 'uri', // 類型 (訊息)
-						                    	           'label' => 'Customer Service I', // 標籤 2
-						                    	           'uri' => 'https://t.me/propanareload_cs' // 用戶發送文字
+						                    	           'type' => 'message', // 類型 (訊息)
+						                    	           'label' => 'Customer Service', // 標籤 2
+						                    	           'text' => 'komplain-cs' // 用戶發送文字
 						                    	        )
 						                    	    )
 						                    	),
-						                       array(
-						                    	    'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
-						                    	    'title' => 'Customer Service via Telegram', // 標題 1 <不一定需要>
-						                    	    'text' => 'Klik Tombol dibawah', // 文字 1
-						                    	    'actions' => array(
-						                    	        array(
-						                    	            'type' => 'uri', // 類型 (訊息)
-						                    	            'label' => 'Customer Service II', // 標籤 2
-						                    	            'uri' => 'https://t.me/cspropana' // 用戶發送文字
-						                    	        )
-						                    	    )
-						                    	),
+						                     //   array(
+						                    	//     'thumbnailImageUrl' => 'https://raw.githubusercontent.com/alroysh/dyal/master/image/photo4.jpg', // 圖片網址 <不一定需要>
+						                    	//     'title' => 'Customer Service via Telegram', // 標題 1 <不一定需要>
+						                    	//     'text' => 'Klik Tombol dibawah', // 文字 1
+						                    	//     'actions' => array(
+						                    	//         array(
+						                    	//             'type' => 'uri', // 類型 (訊息)
+						                    	//             'label' => 'Customer Service II', // 標籤 2
+						                    	//             'uri' => 'https://t.me/cspropana' // 用戶發送文字
+						                    	//         )
+						                    	//     )
+						                    	// ),
 						                    )
 						                )
 						            )
