@@ -6,6 +6,7 @@
 						date_default_timezone_set('Asia/Jayapura');
 						$wit= date('H.i.s');
 
+
 				// Modul 1 : https://instaud.io/_/1R2o.mp3
 				// Modul 2 : https://instaud.io/_/1R2q.mp3
 				// Modul 3 : https://instaud.io/_/1R2r.mp3
@@ -44,6 +45,25 @@
 
 					
 
+
+
+				function ApiCurl($token)
+				{
+
+				  $url = 'http://api.bisatopup.com/profile/index';
+				  $headers = array();
+				  $headers[] = 'X-Authorization: 7ca1f6abc83acc37fb3b4cf72556266c304de171';
+				  $ch = curl_init($url);
+				  curl_setopt($ch, CURLOPT_URL, $url);
+				  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+				  curl_setopt($ch, CURLOPT_HEADER, FALSE);
+				  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+				  $result = curl_exec($ch);
+				  curl_close($ch);
+				  return $result;
+				}
+					echo $result;
 
 				function CallLineGetName($access_token,$userId)
 				{
@@ -126,6 +146,21 @@
 												)
 									);
 							}
+
+
+					if($pesan_datang=='coba'){
+						$balas = array(
+								'replyToken' => $replyToken,														
+								'messages' => 
+											array(
+												array(
+													'type' => 'text',					
+													'text' => ApiCurl(),
+														)
+												)
+									);
+							}
+
 
 
 					// else if($pesan_datang=='/modul'){
